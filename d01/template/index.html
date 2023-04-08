@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" type="image/png" href="../assets/favicon/favicon-48.png" />
+    <title>Player de Música</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="player-1" class="player">
+        <div class="wrapper">
+          <img
+            class="img-preview"
+            src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+            alt="Capa do cd Rockeseat - Single - Acorda Devinho"
+          />
+
+          <div class="info">
+            <h1>Acorda Devinho</h1>
+            <p>Banda Rockeseat</p>
+          </div>
+          <div class="controls">
+            <div class="prev">
+              <img src="../assets/icons/prev.svg" alt="" />
+            </div>
+            <div class="play">
+              <img src="../assets/icons/play.svg" alt="" />
+            </div>
+            <div class="next">
+              <img src="../assets/icons/next.svg" alt="" />
+            </div>
+          </div>
+
+          <div class="track-time">
+            <div class="track"></div>
+            <div class="time">
+              <div class="total-time">03:20</div>
+              <div class="last-time">00:12</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="player-2" class="player">
+        <div class="wrapper">
+          <div class="info-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="Capa do cd Rockeseat - Single - Acorda Devinho"
+            />
+
+            <div class="info">
+              <h1>Acorda Devinho</h1>
+              <p>Banda Rockeseat</p>
+            </div>
+          </div>
+          <div class="controls">
+            <button id="prev" onclick="previousTrack()">
+              <img src="../assets/icons/prev.svg" alt="" />
+            </button>
+            <button id="rewind" onclick="skipBackward()">
+              <img src="../assets/icons/rewind.svg" alt="" />
+            </button>
+            <button id="play">
+              <audio id="audio-player">
+                <source src="../assets/audio/audio_1.mp3" type="audio/mpeg" />
+              </audio>
+              <img id="img-icon" src="../assets/icons/play.svg" alt="" />
+            </button>
+            <button onClick="skipForward()">
+              <img class="forward" src="../assets/icons/forwand.svg" alt="" />
+            </button>
+            <button onclick="nextTrack()" id="next">
+              <img src="../assets/icons/next.svg" alt="" />
+            </button>
+          </div>
+
+          <div class="track-time">
+            <div id="progress-bar"></div>
+            <div id="shadow-pb"></div>
+            <div id="pointer"></div>
+            <div class="time">
+              <span id="current-time">0:00</span>
+              <span id="total-time">0:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="player-3" class="player horizontal">
+        <div class="wrapper">
+          <div class="info-wrapper">
+            <img
+              src="https://images.unsplash.com/photo-1557672172-298e090bd0f1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+              alt="Capa do cd Rockeseat - Single - Acorda Devinho"
+            />
+
+            <div class="info">
+              <h1>Acorda Devinho</h1>
+              <p>Banda Rockeseat</p>
+            </div>
+          </div>
+
+          <div class="controls">
+            <div class="prev">
+              <img src="../assets/icons/prev.svg" alt="" />
+            </div>
+            <div class="play">
+              <img src="../assets/icons/play.svg" alt="" />
+            </div>
+            <div class="next">
+              <img src="../assets/icons/next.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./utils/audio_controls.js"></script>
+  <script src="./utils/progress_bar.js"></script>
+</html>
+

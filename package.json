@@ -1,0 +1,10 @@
+{
+  "name": "boracodar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "author": "Marcel Kaled marcelgckaled@gmail.com",
+  "license": "MIT"
+}
+

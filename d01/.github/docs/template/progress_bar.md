@@ -1,0 +1,3 @@
+# `utils/progress.bar`
+
+- O evento `timeupdate` é disparado pelo elemento de áudio HTML5 quando a posição de reprodução do áudio é alterada. Esse evento é disparado periodicamente, geralmente a cada 250 milissegundos, para indicar que o tempo atual do áudio mudou e que o elemento de áudio está procurando pela nova posição para reproduzir. Quando esse evento é disparado, você pode obter a posição atual do áudio usando a propriedade `currentTime` do elemento de áudio. O tempo total do áudio pode ser obtido usando a propriedade `duration`. Com o evento `timeupdate`, você pode atualizar a posição da barra de progresso, a exibição de tempo e outras informações relevantes do áudio em tempo real à medida que a música é reproduzida.
