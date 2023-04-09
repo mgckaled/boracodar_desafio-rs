@@ -1,4 +1,4 @@
-let IMask
+/* eslint-disable no-undef */
 
 IMask(document.querySelector('#cc-cvv'), {
   mask: '0000'

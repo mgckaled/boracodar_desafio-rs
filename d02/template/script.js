@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-function toggle() {
+function toggle () {
   document.documentElement.classList.toggle('animated')
 }
