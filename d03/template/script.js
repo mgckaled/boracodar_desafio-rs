@@ -1,6 +1,8 @@
-function loading(event) {
+/* eslint-disable no-unused-vars */
+
+function loading (event) {
   const button = event.currentTarget
-  button.classList.add("loading")
+  button.classList.add('loading')
 
   const text = button.textContent
   button.innerHTML = `

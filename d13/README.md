@@ -1,5 +1,4 @@
 <!-- markdownlint-disable MD033 -->
-<!-- markdownlint-disable MD012 -->
 
 <h1 align="center"> Um formulário de cartão </h1>
 
@@ -45,4 +44,3 @@ Esse projeto está sob a licença MIT.
 Feito com ♥ by Marcel Kaled 👋
 
 > Voltar para a [lista de projetos](../README.md)
-

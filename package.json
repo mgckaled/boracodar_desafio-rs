@@ -5,6 +5,44 @@
   "main": "index.js",
   "private": true,
   "author": "Marcel Kaled marcelgckaled@gmail.com",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --check .",
+    "format:fix": "prettier --write .",
+    "stylelint": "npx stylelint **/*.css",
+    "stylelint:fix": "stylelint **/*.css --fix"
+  },
+  "workspaces": [
+    "d01",
+    "d02",
+    "d03",
+    "d04",
+    "d05",
+    "d06",
+    "d07",
+    "d08",
+    "d09",
+    "d10",
+    "d11",
+    "d12",
+    "d13"
+  ],
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.38.0",
+    "eslint-config-standard-with-typescript": "^34.0.1",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "prettier": "2.8.7",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "eslint-config-standard": "^17.0.0"
+  }
 }
-

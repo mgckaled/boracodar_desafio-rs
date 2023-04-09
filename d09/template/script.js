@@ -1,38 +1,38 @@
 const options = {
   series: [
     {
-      name: "cambio",
+      name: 'cambio',
       data: [
         {
-          x: new Date("2018-02-12").getTime(),
+          x: new Date('2018-02-12').getTime(),
           y: 5.18
         },
         {
-          x: new Date("2018-02-13").getTime(),
+          x: new Date('2018-02-13').getTime(),
           y: 5.3
         },
         {
-          x: new Date("2018-02-14").getTime(),
+          x: new Date('2018-02-14').getTime(),
           y: 5.18
         },
         {
-          x: new Date("2018-02-15").getTime(),
+          x: new Date('2018-02-15').getTime(),
           y: 5.11
         },
         {
-          x: new Date("2018-02-16").getTime(),
+          x: new Date('2018-02-16').getTime(),
           y: 5.18
         },
         {
-          x: new Date("2018-02-17").getTime(),
+          x: new Date('2018-02-17').getTime(),
           y: 5.25
         },
         {
-          x: new Date("2018-02-18").getTime(),
+          x: new Date('2018-02-18').getTime(),
           y: 5.18
         },
         {
-          x: new Date("2018-02-19").getTime(),
+          x: new Date('2018-02-19').getTime(),
           y: 5.2
         }
       ]
@@ -40,7 +40,7 @@ const options = {
   ],
   chart: {
     height: 350,
-    type: "area",
+    type: 'area',
     toolbar: {
       show: false
     }
@@ -49,14 +49,14 @@ const options = {
     enabled: false
   },
   stroke: {
-    curve: "straight"
+    curve: 'straight'
   },
   yaxis: {
     min: 5,
     tickAmount: 4,
     labels: {
-      formatter: value => {
-        return value.toFixed(1).replace(".", ",")
+      formatter: (value) => {
+        return value.toFixed(1).replace('.', ',')
       }
     }
   },
@@ -79,17 +79,17 @@ const options = {
       stops: [0, 90, 100]
     }
   },
-  colors: ["#7C3AED"],
+  colors: ['#7C3AED'],
   tooltip: {
     custom: function ({ series, seriesIndex, dataPointIndex, w }) {
       return `<div class="tooltip">
-    <span>${String(series[seriesIndex][dataPointIndex]).replace(".", ",")}</span>
+    <span>${String(series[seriesIndex][dataPointIndex]).replace('.', ',')}</span>
     <span>${new Date(w.globals.seriesX[seriesIndex][dataPointIndex]).toLocaleDateString(
-      "pt-BR",
+      'pt-BR',
       {
-        weekday: "short",
-        month: "short",
-        day: "numeric"
+        weekday: 'short',
+        month: 'short',
+        day: 'numeric'
       }
     )}</span>
     </div>`
@@ -97,5 +97,6 @@ const options = {
   }
 }
 
-const chart = new ApexCharts(document.querySelector("#chart"), options)
+// eslint-disable-next-line no-undef
+const chart = new ApexCharts(document.querySelector('#chart'), options)
 chart.render()

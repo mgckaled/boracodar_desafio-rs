@@ -1,7 +1,11 @@
-function togglePassword() {
-  document.querySelectorAll(".eye").forEach(eye => eye.classList.toggle("hide"))
+/* eslint-disable no-unused-vars */
 
-  const type = senha.getAttribute("type") == "password" ? "text" : "password"
+let senha
 
-  senha.setAttribute("type", type)
+function togglePassword () {
+  document.querySelectorAll('.eye').forEach((eye) => eye.classList.toggle('hide'))
+
+  const type = senha.getAttribute('type') === 'password' ? 'text' : 'password'
+
+  senha.setAttribute('type', type)
 }

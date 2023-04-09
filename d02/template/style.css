@@ -16,14 +16,13 @@
 body {
   background-color: var(--bg-color);
   height: 100vh;
-
   display: grid;
   place-content: center;
 }
 
 body * {
   color: var(--text-color);
-  font-family: 'Lato', sans-serif;
+  font-family: Lato, sans-serif;
   line-height: 100%;
 }
 
@@ -45,10 +44,8 @@ body * {
 #product-image button {
   position: absolute;
   right: 0;
-
   background-color: transparent;
   border: 0;
-
   cursor: pointer;
 }
 
@@ -77,7 +74,6 @@ h1 {
   font-family: 'Crimson Pro', serif;
   font-weight: 600;
   font-size: 32px;
-
   margin-top: 12px;
 }
 
@@ -89,12 +85,9 @@ p {
 #product-details button {
   font-size: 12px;
   line-height: 16px;
-
   padding: 8px 16px;
   border: 0.5px solid var(--text-color);
   border-radius: 999px;
-
   background-color: transparent;
-
   margin-top: 20px;
 }

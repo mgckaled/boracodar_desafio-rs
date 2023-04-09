@@ -1,5 +1,4 @@
 <!-- markdownlint-disable MD033 -->
-<!-- markdownlint-disable MD012 -->
 
 <h1 align="center"> Botões e cursores </h1>
 

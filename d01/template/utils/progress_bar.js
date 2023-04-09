@@ -1,10 +1,10 @@
 // atribuir variáveis aos IDs dos elementos HTML
 const audioPlayer = document.getElementById('audio-player')
 const progressBar = document.getElementById('progress-bar')
-const progressCursor = document.querySelector('.progress-cursor')
+const pointer = document.getElementById('pointer')
 
 // formatação do tempo - minutos e segundos
-const formatTime = timeInSeconds => {
+const formatTime = (timeInSeconds) => {
   // arrendonda para baixo o tempo em segundos dividido por 60
   const minutes = Math.floor(timeInSeconds / 60)
   // arrendonda para baixo o o resto do tempo com base 60
@@ -18,7 +18,7 @@ const formatTime = timeInSeconds => {
   return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`
 }
 
-const updateProgressBar = progress => {
+const updateProgressBar = (progress) => {
   // largura interna de um elemento em pixels.
   const progressBarWidth = progressBar.clientWidth
   // referencia a largura interna de um elemento em pixels.

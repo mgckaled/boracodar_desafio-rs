@@ -8,7 +8,7 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Titillium Web', sans-serif;
 }
 
 body {
@@ -111,18 +111,13 @@ input::placeholder {
 
 input {
   width: 100%;
-
-  background: #ffffff;
+  background: #fff;
   border: 0.1rem solid #e2e8f0;
   border-radius: 0.4rem;
-
   padding: 1.6rem 1.2rem;
-
   margin-top: 0.8rem;
-
   font-size: 1.4rem;
   line-height: 2.1rem;
-
   color: #1e293b;
 }
 
@@ -143,7 +138,6 @@ input:disabled {
 .eye {
   width: 2rem;
   height: 2rem;
-
   position: absolute;
   top: 55%;
   right: 5%;
@@ -155,19 +149,14 @@ input:disabled {
 
 form button {
   display: flex;
-
   justify-content: center;
   align-items: center;
   padding: 1.6rem 2.4rem;
-
   background: #7c3aed;
   border-radius: 0.4rem;
-
   width: 100%;
-
   font-weight: bold;
-  color: #ffffff;
-
+  color: #fff;
   margin-block: 3.2rem;
 }
 
@@ -184,10 +173,11 @@ form button:hover {
   color: #475569;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   #page > * {
     width: 100%;
   }
+
   #page > img {
     display: none;
   }
@@ -201,7 +191,7 @@ form button:hover {
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   #page > div {
     padding: 4rem;
   }

@@ -8,7 +8,7 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Lato", sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 body {
@@ -16,13 +16,10 @@ body {
 }
 
 main {
-  background: url(../assets/bg.jpeg) no-repeat center/cover;
-
+  background: url('../assets/bg.jpeg') no-repeat center/cover;
   min-height: 100vh;
-
   display: grid;
   place-content: center;
-
   padding: 6.4rem;
   gap: 2.4rem;
 }
@@ -34,20 +31,17 @@ section {
 }
 
 .temperature-now {
-  background: url(../assets/bg-temp-now.jpeg);
+  background: url('../assets/bg-temp-now.jpeg');
   position: relative;
-
   display: grid;
   grid-template-rows: max-content 1fr max-content;
 }
 
 .temperature-now::before {
-  content: "";
+  content: '';
   width: 17.6rem;
   height: 17.6rem;
-
-  background: url(../assets/clouds.svg) no-repeat;
-
+  background: url('../assets/clouds.svg') no-repeat;
   position: absolute;
   top: -5.6rem;
   left: -5.6rem;
@@ -55,9 +49,7 @@ section {
 
 .location {
   justify-self: end;
-
   padding: 3.2rem 3.2rem 0;
-
   display: flex;
   align-items: center;
   gap: 0.4rem;
@@ -70,9 +62,7 @@ section {
 
 .temp {
   margin: 6rem;
-
   font-weight: 700;
-
   display: flex;
   justify-content: center;
   gap: 0.4rem;
@@ -82,7 +72,6 @@ section {
   text-align: center;
   font-size: 8.8rem;
   color: white;
-
   display: flex;
   flex-direction: column;
   gap: 0.4rem;
@@ -99,24 +88,20 @@ section {
 .celsius {
   font-size: 2.4rem;
   color: #dad8f7;
-
   margin-top: 1.5rem;
 }
 
 .statistics {
   padding: 1.2rem;
-
   display: flex;
   gap: 0.8rem;
 }
 
 .stats {
   flex: 1;
-
   padding: 1.2rem 1.6rem;
-  background: rgba(102, 96, 200, 0.6);
+  background: rgb(102 96 200 / 60%);
   border-radius: 0.6rem;
-
   display: flex;
   align-items: center;
   gap: 1.2rem;
@@ -133,7 +118,6 @@ section {
 
 .stats .info h5 {
   font-size: 1.8rem;
-
   display: flex;
   align-items: baseline;
   gap: 0.4rem;
@@ -142,7 +126,6 @@ section {
 /* Air Quality */
 .air-quality {
   font-weight: 700;
-
   text-align: center;
   display: grid;
 }
@@ -150,18 +133,15 @@ section {
 h2.title {
   font-size: 1.6rem;
   color: #dad8f7;
-
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
-
   margin-top: 3.2rem;
 }
 
 .air-quality .good {
   margin-top: 3.2rem;
-
   font-size: 1.8rem;
   color: #87ebcd;
 }
@@ -175,9 +155,7 @@ h2.title {
 .air-quality .info {
   display: flex;
   align-items: center;
-
   margin-top: 3.2rem;
-
   padding: 0 1.6rem 1.6rem;
 }
 
@@ -204,25 +182,23 @@ h2.title {
 
 .sun-chart {
   --pos-x: 75;
+
   margin: auto;
   width: 21.6rem;
   height: 21.6rem;
-
   position: relative;
 }
 
 .sun-chart::before {
-  content: "";
+  content: '';
   width: 1.2rem;
   height: 1.2rem;
   position: absolute;
   background: #f6c833;
   border-radius: 50%;
-
   top: 50%;
   left: 50%;
   margin: -0.6rem;
-
   transform: rotate(calc(1deg * (((100 - var(--pos-x)) / -100) * 180))) translate(10.6rem);
 }
 
@@ -233,23 +209,20 @@ h2.title {
 }
 
 .chart::before {
-  content: "";
+  content: '';
   width: 21rem;
   height: 21rem;
-
   display: block;
   border-radius: 50%;
-
   background: linear-gradient(
     180deg,
-    rgba(251, 219, 96, 0.2) 0%,
-    rgba(251, 219, 96, 0) 101.89%
+    rgb(251 219 96 / 20%) 0%,
+    rgb(251 219 96 / 0%) 101.89%
   );
 
   --mask: linear-gradient(0deg, white 50%, transparent 0%);
-  mask: var(--mask);
-  -webkit-mask: var(--mask);
 
+  mask: var(--mask);
   rotate: calc(1.825deg * var(--pos-x));
 }
 
@@ -261,11 +234,9 @@ h2.title {
 
 time.now {
   position: absolute;
-
   top: 25%;
   left: 50%;
   transform: translate(-50%);
-
   color: white;
   font-size: 1.4rem;
   font-weight: 700;
@@ -274,11 +245,9 @@ time.now {
 .time {
   font-size: 1.2rem;
   color: white;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   margin: 1rem auto 0;
   padding: 0 1.6rem 1.6rem;
   max-width: 27.6rem;
@@ -287,14 +256,12 @@ time.now {
 /* Week Weather */
 .week-weather {
   padding: 4rem;
-
   display: flex;
   gap: 1.2rem;
 }
 
 .day {
   flex: 1;
-
   display: grid;
   justify-items: center;
   gap: 1.6rem;
@@ -306,7 +273,6 @@ h4.title {
 }
 
 .day .maxmin {
-  font-size: 700;
   color: white;
   font-size: 1.6rem;
 }
@@ -315,7 +281,7 @@ h4.title {
   color: #c2bff4;
 }
 
-@media (min-width: 1200px) {
+@media (width >= 1200px) {
   main {
     grid-template-columns: 48rem 27.7rem 27.7rem;
     grid-template-rows: 24.4rem 21.2rem;

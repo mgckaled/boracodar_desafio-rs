@@ -8,7 +8,7 @@
 
 :root {
   font-size: 62.5%;
-  font-family: "Roboto";
+  font-family: Roboto, sans-serif;
 }
 
 .sr-only {
@@ -27,22 +27,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   font-weight: 700;
   font-size: 1.4rem;
   line-height: 2.4rem;
-
   text-transform: uppercase;
   cursor: pointer;
-
   padding: 0.4rem 2.4rem;
   border-radius: 0.5rem;
 }
 
 .primary {
   background: #6246ea;
-
-  color: #ffffff;
+  color: #fff;
   transition: background 200ms;
 }
 
@@ -67,27 +63,23 @@ body {
 input,
 select,
 button {
-  font-family: "Roboto";
   all: unset;
 }
 
 header {
   min-height: 53.2rem;
   background-color: #f8f8ff;
-
   position: relative;
   overflow: hidden;
-
   display: grid;
   place-content: center;
 }
 
 header::before {
-  content: "";
-  background-image: url(./assets/bg-header-top.svg);
+  content: '';
+  background-image: url('./assets/bg-header-top.svg');
   width: 40.7rem;
   height: 34.5rem;
-
   position: absolute;
   z-index: 0;
   top: 0;
@@ -95,11 +87,10 @@ header::before {
 }
 
 header::after {
-  content: "";
-  background-image: url(./assets/bg-header-bottom.svg);
+  content: '';
+  background-image: url('./assets/bg-header-bottom.svg');
   width: 41.4rem;
   height: 33rem;
-
   position: absolute;
   right: 0;
   bottom: -1.2rem;
@@ -107,7 +98,6 @@ header::after {
 
 header .content {
   width: fit-content;
-
   position: relative;
   z-index: 1;
 }
@@ -119,10 +109,8 @@ header .content .top {
 header p {
   font-weight: 500;
   line-height: 160%;
-
   letter-spacing: 0.1em;
   text-transform: uppercase;
-
   color: #e45858;
 }
 
@@ -140,12 +128,10 @@ header h1 span {
 
 form {
   margin-top: 4rem;
-
   display: flex;
   padding: 4rem;
   gap: 2.4rem;
-
-  background: #ffffff;
+  background: #fff;
   border: 0.1rem solid #eaeaea;
   border-radius: 1rem;
 }
@@ -154,7 +140,6 @@ form {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-
   background: #f4f4ff;
   border-radius: 0.5rem;
   padding: 1.2rem 0.8rem 1.2rem 1.4rem;
@@ -205,21 +190,19 @@ section.top {
 section.top .view {
   display: flex;
   padding: 0.8rem;
-
   border: 0.1rem solid #eaeaea;
   border-radius: 0.6rem;
 }
 
 section.cards {
   margin-top: 4rem;
-
   display: grid;
   gap: 3.2rem;
   grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
-  background: #ffffff;
+  background: #fff;
   border: 0.1rem solid #eaeaea;
   border-radius: 1rem;
   max-width: 38.4rem;
@@ -229,7 +212,6 @@ section.cards {
 .card .content {
   display: grid;
   gap: 1.6rem;
-
   padding: 1.6rem;
 }
 
@@ -247,7 +229,6 @@ section.cards {
   display: flex;
   align-items: center;
   gap: 1.25rem;
-
   opacity: 0.75;
 }
 
@@ -262,7 +243,7 @@ main {
   padding-inline: 4rem;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   :root {
     font-size: 50%;
   }
@@ -273,7 +254,7 @@ main {
   }
 }
 
-@media (max-width: 870px) {
+@media (width <= 870px) {
   header .content {
     padding: 4rem;
   }
@@ -283,13 +264,13 @@ main {
   }
 }
 
-@media (max-width: 660px) {
+@media (width <= 660px) {
   section.cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   section.cards {
     grid-template-columns: 1fr;
   }
