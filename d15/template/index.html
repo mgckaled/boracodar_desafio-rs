@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing Table</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <p class="text-header">Para você começar</p>
+        <div class="product-container">
+          <p class="name-product">Essentials</p>
+          <div class="price-wrapper">
+            <p class="price">
+              <span id="currency-price">R$</span>19,97
+              <span id="period-price">/mês</span>
+            </p>
+          </div>
+        </div>
+        <button id="btn-alert">Assinar agora</button>
+        <hr />
+
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p class="text-description">Até 3 usuários</p>
+          </div>
+          <img id="icon-info" src="../assets/info.svg" alt="" />
+          <div class="dialog-box">Mensagem de diálogo</div>
+        </div>
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p class="text-description">Autoatendimento</p>
+          </div>
+          <img id="icon-info" src="../assets/info.svg" alt="" />
+        </div>
+      </div>
+      <div class="card" id="dark-theme">
+        <div class="box"><p>Mais vantajoso</p></div>
+        <p class="text-header">Para você decolar</p>
+        <div class="product-container">
+          <p class="name-product">Ultimate</p>
+          <div class="price-wrapper">
+            <p class="price">
+              <span id="currency-price">R$</span>29,97
+              <span id="period-price">/mês</span>
+            </p>
+          </div>
+        </div>
+        <button id="btn-alert" class="btn-dark-theme">Assinar agora</button>
+        <hr class="hr-dark-theme" />
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p id="text-dark-theme" class="text-description">Usuários ilimitados</p>
+          </div>
+          <img id="icon-info" src="../assets/info_dark.svg" alt="" />
+        </div>
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p id="text-dark-theme" class="text-description">Suporte 24/7</p>
+          </div>
+          <img id="icon-info" src="../assets/info_dark.svg" alt="" />
+        </div>
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p id="text-dark-theme" class="text-description">CSM Dedicado</p>
+          </div>
+          <img id="icon-info" src="../assets/info_dark.svg" alt="" />
+        </div>
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p id="text-dark-theme" class="text-description">Treinamentos</p>
+          </div>
+          <img id="icon-info" src="../assets/info_dark.svg" alt="" />
+        </div>
+      </div>
+      <div class="card">
+        <p class="text-header">Para sua empresa</p>
+        <div class="product-container">
+          <p class="name-product">Entreprise</p>
+        </div>
+        <button id="btn-alert">Fale com a gente</button>
+        <hr />
+        <div class="description-container">
+          <div class="check-text">
+            <img src="../assets/check.svg" alt="" />
+            <p class="text-description">
+              Plano customizado especialmente para a necessidade de seu negócio
+            </p>
+          </div>
+          <img id="icon-info" src="../assets/info.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
