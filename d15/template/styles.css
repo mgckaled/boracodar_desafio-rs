@@ -43,13 +43,13 @@ button {
   border: 0.1rem solid var(--gray-800);
   border-radius: 0.4rem;
   font-weight: 700;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in-out;
 }
 
 button:hover {
   background-color: var(--gray-800);
   color: white;
-  transition: transform 0.2s ease;
+
 }
 
 hr {
@@ -60,8 +60,9 @@ hr {
 
 .btn-dark-theme {
   background-color: var(--purple-100);
+   border: 0.1rem solid var(--gray-400);
   color: white;
-  transition: opacity 0.4s ease;
+  transition: background-color 0.3s ease-in, transform 0.3s ease-in-out;
 }
 
 .btn-dark-theme:hover {
@@ -97,7 +98,7 @@ button:active {
   border: 0.2rem solid var(--gray-200);
   text-align: center;
   border-radius: 1rem;
-  padding: 4.8rem 3.2rem 3.2rem;
+  padding: 4rem 3.2rem 3.2rem;
   transition: border-color 0.4s ease-in-out;
 }
 
@@ -157,15 +158,15 @@ button:active {
   transition: transform 0.2s ease;
 }
 
+.box:hover {
+  transform: translateY(-0.3rem);
+}
+
 .box p {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.2rem;
   color: var(--gray-900);
-}
-
-.box:hover {
-  transform: translateY(-0.3rem);
 }
 
 .text-header {
@@ -223,6 +224,7 @@ button:active {
 }
 
 .text-description {
+  text-align: left;
   font-weight: 400;
   color: var(--gray-400);
 }
@@ -233,29 +235,51 @@ button:active {
 
 .icon-info {
   position: relative;
-  width: 50px;
-  height: 50px;
   cursor: pointer;
 }
 
 .dialog-box {
+  display: none;
   position: absolute;
-  top: 100%;
+  white-space: nowrap; 
+  top: 92%;
   left: 50%;
-  background-color: #000;
-  color: white;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  box-shadow: 0 2px 5px rgb(0 0 0 / 30%);
-  padding: 10px;
-  visibility: hidden;
+  transform: translate(-50%, -50%);
+  width: 30rem;
+  overflow-x: auto;
+  padding: 0.8rem 1.6rem;
+  background-color: var(--gray-50);
+  border: 0.1rem solid var(--purple-100);
+  border-radius: 0.6rem;
+  z-index: 2;
 }
 
-.icon-info:hover .dialog-box {
-  visibility: visible;
+.dialog-box p {
+  text-align: left;
+  font-weight: 300;
+  color: var(--gray-600);
+  font-size: 1.2rem;
+  width: 0;
+  overflow: hidden;
+  vertical-align: bottom;
+  animation: typing 2s steps(30, end) forwards;
 }
 
-@media (width < 900px) {
+.icon-info:hover + .dialog-box {
+  display: inline-block;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@media (width < 670px) {
   .card-container {
     display: flex;
     flex-direction: column;
