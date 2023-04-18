@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# `Product Card`
+# `Desafio #02 - Product Card`
+
+**Desafio da semana**: Desenvolva o card de produto conforme especificado utilizando as tecnologias da sua preferência. O arquivo do Figma contém um protótipo e o link para baixar o arquivo .gif a ser utilizado.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 

@@ -49,7 +49,6 @@ button {
 button:hover {
   background-color: var(--gray-800);
   color: white;
-
 }
 
 hr {
@@ -60,7 +59,7 @@ hr {
 
 .btn-dark-theme {
   background-color: var(--purple-100);
-   border: 0.1rem solid var(--gray-400);
+  border: 0.1rem solid var(--gray-400);
   color: white;
   transition: background-color 0.3s ease-in, transform 0.3s ease-in-out;
 }
@@ -241,7 +240,7 @@ button:active {
 .dialog-box {
   display: none;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);

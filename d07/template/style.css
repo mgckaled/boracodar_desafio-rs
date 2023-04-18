@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -243,7 +244,7 @@ main {
   padding-inline: 4rem;
 }
 
-@media (width <= 1024px) {
+@media (width < 1024px) {
   :root {
     font-size: 50%;
   }
@@ -254,7 +255,7 @@ main {
   }
 }
 
-@media (width <= 870px) {
+@media (width < 870px) {
   header .content {
     padding: 4rem;
   }
@@ -264,13 +265,13 @@ main {
   }
 }
 
-@media (width <= 660px) {
+@media (width < 660px) {
   section.cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media (width <= 500px) {
+@media (width < 500px) {
   section.cards {
     grid-template-columns: 1fr;
   }

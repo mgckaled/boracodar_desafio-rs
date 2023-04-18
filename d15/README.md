@@ -23,7 +23,7 @@
 
 ## 🖥️ Deploy
 
-Visualise o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d15/template/).
+Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d15/template/).
 
 ## 🚀 Tecnologias
 

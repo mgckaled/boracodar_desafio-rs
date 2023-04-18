@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD033 -->
+# `Desafio #11 - Página de Login`
 
-# ``Página de Login`
+**Desafio da Semana**: Desenvolva uma tela de login de uma plataforma. Use sua criatividade e fique à vontade para ir além nesse projeto.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -18,12 +19,12 @@
 <br>
 
 <p align="center">
-  <img src=".github/assets/preview.png" width="95%">
+  <img src=".github/assets/preview.jpg" width="95%">
 </p>
 
 ## 🖥️ Deploy
 
-Indisponível.
+Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d11/template/).
 
 ## 🚀 Tecnologias
 

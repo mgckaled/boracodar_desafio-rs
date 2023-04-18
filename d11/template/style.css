@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -173,7 +174,7 @@ form button:hover {
   color: #475569;
 }
 
-@media (width <= 900px) {
+@media (width < 900px) {
   #page > * {
     width: 100%;
   }
@@ -191,7 +192,7 @@ form button:hover {
   }
 }
 
-@media (width <= 600px) {
+@media (width < 600px) {
   #page > div {
     padding: 4rem;
   }

@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -281,7 +282,7 @@ h4.title {
   color: #c2bff4;
 }
 
-@media (width >= 1200px) {
+@media (width > 1200px) {
   main {
     grid-template-columns: 48rem 27.7rem 27.7rem;
     grid-template-rows: 24.4rem 21.2rem;

@@ -1,7 +1,6 @@
 <!-- markdownlint-disable MD033 -->
-# `Desafio #10 - Clima Tempo`
 
-**Desafio da Semana**: Desenvolva uma página de clima. Use sua criatividade e fique à vontade para ir além nesse projeto, adicionando animações, por exemplo.
+# `Componente de Upload`
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -19,36 +18,24 @@
 <br>
 
 <p align="center">
-  <img src=".github/assets/preview.jpg" width="95%">
+  <img src=".github/assets/preview.png" width="95%">
 </p>
 
 ## 🖥️ Deploy
 
-Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d10/template/).
+Indisponível.
 
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML e CSS
+- Git e Github
 - Figma
-
-## 📚 Um poudo do que vimos nesse desafio
-
-- grid-column, grid-row e as linhas virtuais do Grid
-- responsividade
-- max-content
-- alinhamento de div em position:absolute
-- alinhamento de div com grid
-- alinhamento de div com margin
-- flex: 1
-- css variables
-- cálculo de graus (deg) (transform/rotate/translate)
-- css mask e linear-gradient()
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1215291914714743267). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1225440656930547927). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## 📝 Licença
 

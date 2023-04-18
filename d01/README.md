@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# `Music Player`
+# `Desafio #01 - Music Player`
+
+**Desafio da semana**: Desenvolva o player conforme especificado utilizando as tecnologias da sua preferência. Você pode adicionar outros detalhes, como animações.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 

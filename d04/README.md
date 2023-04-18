@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# `Chat`
+# `Desafio #04 - Chat`
+
+**Desafio da semana**: Desenvolva um chat mobile/desktop, que pode ser responsivo. Você pode ir além e adicionar animações, ou mesmo implementar um chat funcional.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 

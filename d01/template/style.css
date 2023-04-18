@@ -2,9 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  scroll-behavior: smooth;
 }
 
 body {
@@ -189,7 +189,7 @@ button:active {
   margin-top: 9.6px;
 }
 
-@media (width <= 670px) {
+@media (width < 671px) {
   #app {
     display: flex;
     flex-direction: column;

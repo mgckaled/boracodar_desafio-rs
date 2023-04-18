@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# `Site de Busca de Bloco de Carnaval`
+# `Desafio #07 - Site de Busca de Bloco de Carnaval`
+
+**Desafio da Semana**: Desenvolva uma página onde o usuário consiga buscar blocos de carnaval. Use sua criatividade e fique à vontade para ir além nesse projeto.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -22,7 +24,7 @@
 
 ## 🖥️ Deploy
 
-Indisponível.
+Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d07/template/).
 
 ## 🚀 Tecnologias
 

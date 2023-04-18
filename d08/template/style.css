@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -245,7 +246,7 @@ svg circle:nth-child(2) {
   }
 }
 
-@media (width >= 120rem) {
+@media (width > 90rem) {
   #app {
     grid-template-columns: 29.6rem max-content max-content;
     grid-template-rows: max-content;

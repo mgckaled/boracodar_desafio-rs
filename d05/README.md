@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# `Calculadora`
+# `Desafio #05 - Calculadora`
+
+**Desafio da Semana**: Desenvolva uma calculadora. Você pode ir além e adicionar estados para os botões e animações, por exemplo, além de tornar a calculadora funcional.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -22,7 +24,7 @@
 
 ## 🖥️ Deploy
 
-Indisponível.
+Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d05/template/).
 
 ## 🚀 Tecnologias
 

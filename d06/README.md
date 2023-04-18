@@ -1,5 +1,7 @@
 <!-- markdownlint-disable MD033 -->
-# `Cartão de Embarque`
+# `Desafio #06 - Cartão de Embarque`
+
+**Desafio da Semana**: Desenvolva uma tela onde um usuário visualiza um cartão de embarque. Use sua criatividade e fique à vontade para ir além nesse projeto.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -22,7 +24,7 @@
 
 ## 🖥️ Deploy
 
-Indisponível.
+Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d06/template/).
 
 ## 🚀 Tecnologias
 
