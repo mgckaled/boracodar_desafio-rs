@@ -1,14 +1,13 @@
 <!-- markdownlint-disable MD033 -->
 
-<h1 align="center">Pricing Table</h1>
+# `Pricing Table`
+
+> `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <p align="center">
-# boraCodar são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-</p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a> &nbsp;&#124;&nbsp;
-  <a href="#-layout">Layout</a> &nbsp;&#124;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -21,6 +20,10 @@
 <p align="center">
   <img src=".github/assets/preview.jpg" width="95%">
 </p>
+
+## 🖥️ Deploy
+
+Visualise o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d15/template/).
 
 ## 🚀 Tecnologias
 

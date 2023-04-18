@@ -1,14 +1,12 @@
 <!-- markdownlint-disable MD033 -->
+# `Kanban`
 
-<h1 align="center"> Um Kanban </h1>
-
-<p align="center">
-<a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-</p>
+> `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -21,6 +19,10 @@
 <p align="center">
   <img src=".github/assets/preview.jpg" width="95%">
 </p>
+
+## 🖥️ Deploy
+
+Indisponível.
 
 ## 🚀 Tecnologias
 

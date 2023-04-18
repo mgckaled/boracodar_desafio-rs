@@ -1,14 +1,12 @@
 <!-- markdownlint-disable MD033 -->
+# `Dashboard`
 
-<h1 align="center"> Dashboard </h1>
-
-<p align="center">
-# boraCodar são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-</p>
+> `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -22,6 +20,10 @@
   <img src=".github/assets/preview.jpg" width="95%">
 </p>
 
+## 🖥️ Deploy
+
+Indisponível.
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -30,7 +32,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Figma
 - <https://bennettfeely.com/clippy/>
 
-## 📚 O que aprendemos nesse desafio
+### 📚 O que aprendemos nesse desafio
 
 ```md
 # CSS
@@ -63,7 +65,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - linearGradient
 ```
 
-## 🍩 Estudos sobre Donut Chart
+### 🍩 Estudos sobre Donut Chart
 
 <https://www.fronteditor.dev/gists/e7d5a452582ebe081f81dee776bca246/view>
 

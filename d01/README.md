@@ -1,14 +1,12 @@
 <!-- markdownlint-disable MD033 -->
+# `Music Player`
 
-<h1 align="center"> Player de Música </h1>
-
-<p align="center">
-# boraCodar são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-</p>
+> `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a> &#124;
-  <a href="#-layout">Layout</a> &#124;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -21,6 +19,10 @@
 <p align="center">
   <img src=".github/assets/preview.jpg" width="95%">
 </p>
+
+## 🖥️ Deploy
+
+Indisponível.
 
 ## 🚀 Tecnologias
 

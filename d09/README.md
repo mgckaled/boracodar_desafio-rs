@@ -1,14 +1,12 @@
 <!-- markdownlint-disable MD033 -->
+# `Conversor de Moedas`
 
-<h1 align="center"> Conversor de moedas </h1>
-
-<p align="center">
-<a href="https://www.rocketseat.com.br/boracodar">#boraCodar</a> são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-</p>
+> `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -22,6 +20,10 @@
   <img src=".github/assets/preview.jpg" width="95%">
 </p>
 
+## 🖥️ Deploy
+
+Indisponível.
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -31,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [Apex Charts](https://apexcharts.com/)
 - [Flag Icons](https://github.com/lipis/flag-icons)
 
-## 📚 Um poudo do que vimos nesse desafio
+### 📚 Um poudo do que vimos nesse desafio
 
 - `outline` x `border` CSS property
 - Custom `<select>`

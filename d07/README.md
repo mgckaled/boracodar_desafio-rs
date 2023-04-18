@@ -1,14 +1,12 @@
 <!-- markdownlint-disable MD033 -->
+# `Site de Busca de Bloco de Carnaval`
 
-<h1 align="center"> Site para encontrar seu bloco no carnaval </h1>
-
-<p align="center">
-# boraCodar são desafios semanais, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-</p>
+> `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
+  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;&#124;&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
@@ -22,6 +20,10 @@
   <img src=".github/assets/preview.jpg" width="95%">
 </p>
 
+## 🖥️ Deploy
+
+Indisponível.
+
 ## 🚀 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -31,7 +33,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - Figma
 - Phosphor Icons
 
-**O que aprendemos nesse desafio:**
+### 📚 Um poudo do que vimos nesse desafio
 
 - Organização de Github, readme, imagens, hacks para tabela de readme
 - Input, Select e Button customizados
