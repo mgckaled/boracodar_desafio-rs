@@ -1,6 +1,7 @@
 <!-- markdownlint-disable MD033 -->
+# `Desafio #13 - Formulário de Cartão de Crédito`
 
-# `Formulário de Cartão de Crédito`
+**Desafio da Semana**: Desenvolva um formulário de cartão de crédito. Use sua criatividade e fique à vontade para ir além nesse projeto, adicionando animações, por exemplo.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -23,7 +24,7 @@
 
 ## 🖥️ Deploy
 
-Indisponível.
+Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_desafios-rs/d15/template/).
 
 ## 🚀 Tecnologias
 

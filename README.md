@@ -54,7 +54,7 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td><code>02</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d02" target="_blank" ><code>product card</code></a></td>
             <td align="center"><a href="02"><img width="200px" src="d02/.github/assets/preview.jpg" /></a></td>
-            <td align="center"></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d02/template/" target="_blank" ><img width="40px" src="d02/.github/assets/deploy.svg" /></a></td>
         </tr>
         <tr>
             <td><code>03</code></td>
@@ -66,7 +66,7 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td><code>04</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d04" target="_blank" ><code>chat</code></a></td>
             <td align="center"><a href="04"><img width="200px" src="d04/.github/assets/preview.jpg" /></a></td>
-            <td align="center"></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d04/template/" target="_blank" ><img width="40px" src="d04/.github/assets/deploy.svg" /></a></td>
         </tr>
         <tr>
             <td><code>05</code></td>
@@ -120,7 +120,7 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td><code>13</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d13" target="_blank" ><code>formulário de cartão de crédito</code></a></td>
             <td align="center" ><a href="13"><img width="200px" src="d13/.github/assets/preview.jpg" /></a></td>
-            <td align="center"></td>
+             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d13/template/" target="_blank" ><img width="40px" src="d13/.github/assets/deploy.svg" /></a></td>
         </tr>
          <tr>
             <td><code>14</code></td>
