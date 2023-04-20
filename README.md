@@ -126,7 +126,7 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td><code>14</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d14" target="_blank" ><code>componente de upload</code></a></td>
             <td align="center" ><a href="14"><img width="200px" src="d14/.github/assets/preview.png" /></a></td>
-            <td align="center"></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d14/template/" target="_blank" ><img width="40px" src="d14/.github/assets/deploy.svg" /></a></td>
         </tr>
          <tr>
             <td><code>15</code></td>
