@@ -1,8 +1,6 @@
 /* == GLOBAL STYLES == */
 
-*,
-*::before,
-*::after {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -60,13 +58,9 @@ button:not(:has(img)) {
   cursor: default;
 }
 
-input:focus,
-select:focus,
-textarea:focus,
 button:focus {
-  outline: none
+  outline: none;
 }
-  
 
 /* == CONTAINER DESIGN == */
 
@@ -74,22 +68,21 @@ button:focus {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-betweew;
+  justify-content: center;
+  justify-items: center;
   gap: 1.2rem;
   height: 100vh;
 }
 
 #upload-box {
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-betweew;
+  justify-content: center;
   width: 44rem;
   height: 16rem;
-  position: relative;
   background-color: var(--purple-100);
   border-radius: 0.8rem;
-  animation: move-border 2s linear infinite;
   border: 0.2rem dashed var(--purple-300);
 }
 
@@ -140,6 +133,7 @@ button:focus {
 }
 
 .file-progress-bar {
+  display: flex;
   width: 32.4rem;
   height: 0.8rem;
   background-color: var(--gray-200);
@@ -202,11 +196,5 @@ button:focus {
 
   100% {
     transform: translateY(0);
-  }
-}
-
-@keyframes move-border {
-  to {
-    background-position: 100% 0;
   }
 }
