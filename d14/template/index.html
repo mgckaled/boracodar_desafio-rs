@@ -28,10 +28,11 @@
           <p class="p-header-upload-box"><strong>Importe seus arquivos </strong></p>
           <p class="p-upload-box">Arraste ou clique para fazer upload</p>
         </div>
+
         <div id="file-box">
-          <div class="file-icon-box">
+          <div id="file-icon-box" b-color="purple">
             <img
-              src="../assets/document.svg"
+              src="../assets/doc-purple.svg"
               alt="Icone de uma folha com uma dobra na parte superior a direita, representando um arquivo"
             />
           </div>
@@ -47,10 +48,11 @@
             <p class="p-status-upload">46%</p>
           </div>
         </div>
+
         <div id="file-box">
-          <div class="file-icon-box">
+          <div id="file-icon-box" b-color="green">
             <img
-              src="../assets/document.svg"
+              src="../assets/doc-green.svg"
               alt="Icone de uma folha com uma dobra na parte superior a direita, representando um arquivo"
             />
           </div>
@@ -61,13 +63,14 @@
           </div>
           <div class="icon-status-box">
             <button></button>
-            <p class="p-status-upload">100%</p>
+            <p class="p-status-upload" t-color="green">100%</p>
           </div>
         </div>
+        
         <div id="file-box">
-          <div class="file-icon-box">
+          <div id="file-icon-box" b-color="red">
             <img
-              src="../assets/document.svg"
+              src="../assets/doc-red.svg"
               alt="Icone de uma folha com uma dobra na parte superior a direita, representando um arquivo"
             />
           </div>
@@ -80,10 +83,11 @@
             <button>
               <img src="../assets/reload.svg" alt="" />
             </button>
-            <p class="p-status-upload">erro</p>
+            <p class="p-status-upload" t-color="red">erro</p>
           </div>
         </div>
       </div>
     </main>
   </body>
+  <script src="./utils/upload.js"></script>
 </html>

@@ -1,6 +1,8 @@
 /* == GLOBAL STYLES == */
 
-* {
+*,
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -29,11 +31,19 @@
   --red-200: #e36363;
 
   font-size: 62.5%;
+  line-height: 1.3;
 }
 
 body {
   background-color: var(--gray-100);
   font-family: Inter, sans-serif;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
 }
 
 p {
@@ -62,6 +72,10 @@ button:focus {
   outline: none;
 }
 
+input[type='file'] {
+  display: none;
+}
+
 /* == CONTAINER DESIGN == */
 
 #app-container {
@@ -79,11 +93,13 @@ button:focus {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
   width: 44rem;
   height: 16rem;
   background-color: var(--purple-100);
   border-radius: 0.8rem;
-  border: 0.2rem dashed var(--purple-300);
+  border: 0.25rem dashed var(--purple-200);
+  transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out
 }
 
 #file-box {
@@ -101,16 +117,27 @@ button:focus {
   box-shadow: 0 4px 16px var(--box-shadow);
 }
 
-.file-icon-box {
+#file-icon-box {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 4.8rem;
   height: 5.6rem;
-  background: var(--purple-200);
   border-radius: 0.4rem;
   cursor: pointer;
+}
+
+#file-icon-box[b-color='purple'] {
+  background-color: var(--purple-200);
+}
+
+#file-icon-box[b-color='green'] {
+  background-color: var(--green-100);
+}
+
+#file-icon-box[b-color='red'] {
+  background-color: var(--red-100);
 }
 
 .data-file-box {
@@ -167,10 +194,23 @@ button:focus {
 .p-status-upload {
   font-weight: 500;
   font-size: 1.2rem;
-  color: var(--gray-300);
+  color: var(--gray-300)
+}
+
+.p-status-upload[t-color='green'] {
+  color: var(--green-300);
+}
+
+.p-status-upload[t-color='red'] {
+  color: var(--red-200);
 }
 
 /* == ANIMATION STYLES == */
+
+#upload-box:hover {
+  border-color: var(--purple-300);
+  background-color: var(--purple-50);
+}
 
 #upload-box:hover img {
   position: relative;
@@ -197,4 +237,25 @@ button:focus {
   100% {
     transform: translateY(0);
   }
+}
+
+#file-dropzone {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#file-dropzone.hover {
+  background-color: #f7f7f7;
+}
+
+#file-dropzone p {
+  margin: 0;
+  font-size: 16px;
+}
+
+#file-metadata {
+  margin-top: 10px;
+  font-size: 14px;
 }
