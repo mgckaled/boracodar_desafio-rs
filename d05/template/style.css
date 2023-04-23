@@ -35,21 +35,36 @@ body * {
 }
 
 #last-calc {
+  display: block;
+  content: '';
   text-align: right;
   font-size: 20px;
   line-height: 140%;
   color: #6b6b6b;
 }
 
+#last-calc input {
+  all: inherit;
+}
+
 #result {
   margin-top: 8px;
   display: flex;
+  direction: row;
   justify-content: space-between;
 }
 
-#result span {
-  font-size: 36px;
+#result-container {
+  width: 200px;
+  overflow: auto;
+  text-align: right;
+  font-size: 30px;
   line-height: 140%;
+  color: #ebebeb;
+}
+
+#result-container input {
+  all: inherit;
   color: #ebebeb;
 }
 
@@ -64,6 +79,7 @@ button {
   border: 0;
   width: 64px;
   height: 64px;
+  cursor: pointer;
   background: linear-gradient(180deg, rgb(0 0 0 / 5%) 0%, rgb(255 255 255 / 5%) 100%),
     #2d2a37;
   box-shadow: 0 11px 7px rgb(0 0 0 / 1%), 0 7px 7px rgb(0 0 0 / 4%),
