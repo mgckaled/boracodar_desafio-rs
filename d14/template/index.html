@@ -20,11 +20,18 @@
   <body>
     <main>
       <div id="app-container">
-        <div id="upload-box">
+        <div
+          id="upload-box"
+          click="selectFile"
+          ondragover="handleDragOver(event)"
+          ondrop="handleFileSelect(event)"
+        >
+          <input type="file" id="file-input" click="selectFile()" style="display: none" />
           <img
             src="../assets/cloud.svg"
             alt="Ícone representano uma núvem roxa com uma seta para cima,no meio"
           />
+
           <p class="p-header-upload-box"><strong>Importe seus arquivos </strong></p>
           <p class="p-upload-box">Arraste ou clique para fazer upload</p>
         </div>
@@ -66,7 +73,7 @@
             <p class="p-status-upload" t-color="green">100%</p>
           </div>
         </div>
-        
+
         <div id="file-box">
           <div id="file-icon-box" b-color="red">
             <img
@@ -84,6 +91,27 @@
               <img src="../assets/reload.svg" alt="" />
             </button>
             <p class="p-status-upload" t-color="red">erro</p>
+          </div>
+        </div>
+
+        <div id="new-file-box" >
+          <div id="file-icon-box" b-color="purple">
+            <img
+              id="icon"
+              src="../assets/doc-purple.svg"
+              alt="Icone de uma folha com uma dobra na parte superior a direita, representando um arquivo"
+            />
+          </div>
+          <div class="data-file-box">
+            <p id="file-name"></p>
+            <p id="upload-size"></p>
+            <div class="progress"></div>
+          </div>
+          <div class="icon-status-box">
+            <button>
+              <img src="../assets/reload.svg" alt="" />
+            </button>
+            <p id="upload-percentage"></p>
           </div>
         </div>
       </div>

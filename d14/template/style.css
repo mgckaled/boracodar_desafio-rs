@@ -7,6 +7,9 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: lining-nums;
+  font-feature-settings: 'lnum';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -49,6 +52,11 @@ textarea {
 p {
   font-size: 1.4rem;
   font-weight: 400;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* adjust the value to limit the number of lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 p strong {
@@ -99,7 +107,7 @@ input[type='file'] {
   background-color: var(--purple-100);
   border-radius: 0.8rem;
   border: 0.25rem dashed var(--purple-200);
-  transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out
+  transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
 }
 
 #file-box {
@@ -194,7 +202,7 @@ input[type='file'] {
 .p-status-upload {
   font-weight: 500;
   font-size: 1.2rem;
-  color: var(--gray-300)
+  color: var(--gray-300);
 }
 
 .p-status-upload[t-color='green'] {
@@ -209,7 +217,7 @@ input[type='file'] {
 
 #upload-box:hover {
   border-color: var(--purple-300);
-  background-color: var(--purple-50);
+  background-color: var(--purple-200);
 }
 
 #upload-box:hover img {
@@ -239,23 +247,51 @@ input[type='file'] {
   }
 }
 
-#file-dropzone {
-  border: 2px dashed #ccc;
-  padding: 20px;
-  text-align: center;
-  cursor: pointer;
+/* NEW FILE BOX - DRAG AND DROP */
+
+#new-file-box {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-betweew;
+  position: relative;
+  width: 44rem;
+  height: 7.2rem;
+  padding: 0.8rem;
+  gap: 1.2rem;
+  background: white;
+  border-radius: 0.8rem;
+  box-shadow: 0 4px 16px var(--box-shadow);
 }
 
-#file-dropzone.hover {
-  background-color: #f7f7f7;
+.progress-bar {
+  background-color: #ddd;
+  height: 20px;
+  width: 100%;
 }
 
-#file-dropzone p {
-  margin: 0;
-  font-size: 16px;
+#file-name {
+  font-weight: 700;
+  color: var(--gray-600);
 }
 
-#file-metadata {
-  margin-top: 10px;
-  font-size: 14px;
+#upload-size {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--gray-400);
+}
+
+#upload-percentage {
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--gray-400);
+}
+
+.progress {
+  display: flex;
+  width: 32.4rem;
+  height: 0.8rem;
+  background-color: var(--gray-200);
+  border-radius: 99px;
+  cursor: progress;
 }

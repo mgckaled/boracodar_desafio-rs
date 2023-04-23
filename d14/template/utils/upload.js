@@ -1,46 +1,78 @@
-const fileDropzone = document.getElementById('upload-box')
-const fileMetadata = document.createElement('div')
-fileMetadata.id = 'file-metadata'
-fileDropzone.appendChild(fileMetadata)
 
-fileDropzone.addEventListener('dragover', (event) => {
-  event.preventDefault()
-  fileDropzone.classList.add('hover')
-})
+const dropZone = document.querySelector('#upload-box')
+const fileBox = document.querySelector('#new-file-box')
+const fileName = document.querySelector('#file-name')
+const uploadSize = document.querySelector('#upload-size')
+const progressBar = document.querySelector('.progress')
+const uploadPercentage = document.querySelector('#upload-percentage')
+const fileInput = document.querySelector('#file-input')
 
-fileDropzone.addEventListener('dragleave', () => {
-  fileDropzone.classList.remove('hover')
-})
+// const svgIconFile = document.querySelector('#icon')
+// const fileIconBox = document.querySelector('#icon-file-box')
 
-fileDropzone.addEventListener('drop', (event) => {
-  event.preventDefault()
-  fileDropzone.classList.remove('hover')
-  const file = event.dataTransfer.files[0]
-  displayFileMetadata(file)
-})
+dropZone.addEventListener('click', selectFile)
+dropZone.addEventListener('dragover', handleDragOver)
+dropZone.addEventListener('drop', handleFileSelect)
 
-fileDropzone.addEventListener('click', () => {
-  const fileInput = document.createElement('input')
-  fileInput.type = 'file'
-  fileInput.addEventListener('change', () => {
-    const file = fileInput.files[0]
-    displayFileMetadata(file)
-  })
-  fileInput.click()
-})
-
-function displayFileMetadata (file) {
-  const fileName = file.name
-  const fileSize = getFileSize(file.size)
-  fileMetadata.textContent = `${fileName} (${fileSize})`
+function showFileBox () {
+  fileBox.style.display = 'flex'
 }
 
-function getFileSize (size) {
-  const units = ['B', 'KB', 'MB', 'GB', 'TB']
-  let unitIndex = 0
-  while (size >= 1024 && unitIndex < units.length - 1) {
-    size /= 1024
-    unitIndex++
+// function handleChangeColorBoxAndIcon () {
+//   svgIconFile.src = '../assets/doc-green.svg'
+//   fileIconBox.setAttribute('b-color', 'green')
+// }
+
+function selectFile () {
+  fileInput.click()
+}
+
+function handleFileSelect (event) {
+  event.stopPropagation()
+  event.preventDefault()
+  showFileBox()
+  const file = event.dataTransfer.files[0]
+  fileName.textContent = `${file.name}`
+  uploadSize.textContent = `${formatBytes(0)} / ${formatBytes(file.size)}`
+
+  const xhr = new XMLHttpRequest()
+  xhr.upload.addEventListener('progress', (event) => {
+    const percent = (event.loaded / event.total) * 100
+    uploadSize.textContent = `${formatBytes(event.loaded)} / ${formatBytes(file.size)}`
+    uploadPercentage.textContent = `${percent.toFixed(0)}%`
+    progressBar.style.width = `${percent.toFixed(0)}%`
+  })
+  xhr.addEventListener('load', () => {})
+  // handleChangeColorBoxAndIcon()
+}
+
+function handleDragOver (event) {
+  event.stopPropagation()
+  event.preventDefault()
+}
+
+fileInput.addEventListener('change', () => {
+  showFileBox()
+  const file = fileInput.files[0]
+  fileName.textContent = `${file.name}`
+  uploadSize.textContent = `${formatBytes(0)} / ${formatBytes(file.size)}`
+
+  const xhr = new XMLHttpRequest()
+  xhr.upload.addEventListener('progress', (event) => {
+    const percent = (event.loaded / event.total) * 100
+    uploadSize.textContent = `${formatBytes(event.loaded)} / ${formatBytes(file.size)}`
+    uploadPercentage.textContent = `${percent.toFixed(0)}%`
+    progressBar.style.width = `${percent.toFixed(0)}%`
+  })
+  xhr.addEventListener('load', () => {})
+  // handleChangeColorBoxAndIcon()
+})
+
+function formatBytes (bytes) {
+  const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
+  if (bytes === 0) {
+    return '0 Bytes'
   }
-  return `${size.toFixed(2)} ${units[unitIndex]}`
+  const i = Math.floor(Math.log(bytes) / Math.log(1024))
+  return `${parseFloat((bytes / Math.pow(1024, i)).toFixed(2))} ${sizes[i]}`
 }
