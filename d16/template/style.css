@@ -1,0 +1,241 @@
+/*  ==== GLOBAL STYLES ==== */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Roboto, sans-serif;
+  text-rendering: optimizelegibility;
+  font-variant-numeric: lining-nums;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --background: #29292e;
+  --gray-100: #e1e1e6;
+  --gray-200: #8c8cba;
+  --blue-100: #24243d;
+  --blue-200: #282843;
+  --blue-300: #1a1924;
+  --blue-400: #16151e;
+
+  font-size: 62.5%;
+}
+
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+
+h2 {
+  color: var(--gray-100);
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+h3 {
+  color: var(--gray-100);
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+h4 {
+  color: var(--gray-200);
+  font-weight: 400;
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+}
+
+button {
+  background-color: transparent;
+  border-width: 0;
+  cursor: pointer;
+}
+
+/* main cont */
+#app {
+  background-color: var(--background);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  ==== HEADER STYLES ==== */
+
+.header-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 43rem;
+  height: 16.8rem;
+  padding: 4rem;
+  gap: 2.4rem;
+  background-color: var(--blue-400);
+  border-radius: 0.8rem;
+  margin-bottom: -0.25rem;
+}
+
+.header-cont .header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+}
+
+.header-cont .header .icons-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  gap: 2rem;
+}
+
+.header-cont .search-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  width: 35rem;
+  height: 4rem;
+  padding: 1.6rem 2rem;
+  background-color: var(--blue-100);
+  border-radius: 0.8rem;
+  color: var(--gray-100);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.btn-icon {
+  transition: opacity 0.3s ease;
+}
+
+.btn-icon:hover {
+  opacity: 0.7;
+}
+
+.btn-icon:active {
+  animation: pulse 0.2s ease-out;
+}
+
+.btn-icon.search {
+  margin-top: 0.3rem;
+}
+
+input#search-input {
+  all: inherit;
+}
+
+input#search-input::placeholder {
+  color: var(--gray-100);
+}
+
+/*  ==== MAIN STYLES ==== */
+
+.contacts-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 43rem;
+  height: 56rem;
+  padding: 4.8rem 4rem 0;
+  margin-top: -0.25rem;
+  background-color: var(--blue-300);
+  border-bottom-left-radius: 0.8rem;
+  border-bottom-right-radius: 0.8rem;
+}
+
+.contacts-cont .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+  max-height: 48rem;
+  padding-bottom: 1.5rem;
+  overflow-y: auto; /* habilita o scroll vertical */
+}
+
+.contacts-cont .grid .contacts-group {
+  display: flex;
+  padding: 1rem;
+  align-items: flex-start;
+  flex-shrink: 0;
+  gap: 4.8rem;
+}
+
+.contacts-cont .grid .contacts-group .letter-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+  background-color: var(--blue-400);
+  border-radius: 0.8rem;
+}
+
+.contacts-cont .grid .contacts-group .contacts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contacts-cont .grid .contacts-group .contacts-list .info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.contacts-cont .grid .contacts-group .contacts-list .info .avatar-cont {
+  width: 4.8rem;
+  height: 4.8rem;
+  border-radius: 9.9rem;
+}
+
+.contacts-cont .grid .contacts-group .contacts-list .info .contact {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+}
+
+/* Barra de rolagem para o WebKit (Chrome, Safari e Edge) */
+.grid::-webkit-scrollbar {
+  max-width: 0.8rem; /* Largura da barra */
+  min-height: 5rem; /* Altura da barra */
+  background-color: var(--blue-300);
+}
+
+.grid::-webkit-scrollbar-thumb {
+  background-color: var(--blue-200);
+  border-radius: 999px;
+}
+
+.grid::-webkit-scrollbar-track {
+  background-color: var(--blue-300);
+}
+
+/*  ==== ANIMATIONS STYLES ==== */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.4);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
