@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  font-family: Roboto, sans-serif;
   text-rendering: optimizelegibility;
   font-variant-numeric: lining-nums;
   -webkit-font-smoothing: antialiased;
@@ -15,7 +14,7 @@
 }
 
 :root {
-  --background: #29292e;
+  --background: #1e1e1e;
   --gray-100: #e1e1e6;
   --gray-200: #8c8cba;
   --blue-100: #24243d;
@@ -26,9 +25,24 @@
   font-size: 62.5%;
 }
 
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--background);
+}
+
 h2,
 h3,
 h4 {
+  /* adjust the value to limit the number of lines */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1; /* adjust the value to limit the number of lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h2,
+h3.alphabet {
   cursor: default;
 }
 
@@ -48,7 +62,8 @@ h4 {
   color: var(--gray-200);
   font-weight: 400;
   font-size: 1.2rem;
-  margin-top: 0.4rem;
+
+  /* margin-top: 0.4rem; */
 }
 
 button {
@@ -59,7 +74,6 @@ button {
 
 /* main cont */
 #app {
-  background-color: var(--background);
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -148,7 +162,7 @@ input#search-input::placeholder {
   justify-content: flex-start;
   width: 43rem;
   height: 56rem;
-  padding: 4.8rem 4rem 0;
+  padding: 4.2rem 4rem 0;
   margin-top: -0.25rem;
   background-color: var(--blue-300);
   border-bottom-left-radius: 0.8rem;
@@ -158,18 +172,17 @@ input#search-input::placeholder {
 .contacts-cont .grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
+  gap: 1rem;
   max-height: 48rem;
-  padding-bottom: 1.5rem;
   overflow-y: auto; /* habilita o scroll vertical */
 }
 
 .contacts-cont .grid .contacts-group {
   display: flex;
-  padding: 1rem;
+  padding: 0.8rem 1rem;
   align-items: flex-start;
   flex-shrink: 0;
-  gap: 4.8rem;
+  gap: 3.2rem;
 }
 
 .contacts-cont .grid .contacts-group .letter-cont {
@@ -185,33 +198,58 @@ input#search-input::placeholder {
 .contacts-cont .grid .contacts-group .contacts-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 
 .contacts-cont .grid .contacts-group .contacts-list .info {
   display: flex;
+  width: 24rem;
   flex-direction: row;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  padding: 0.5rem 0.6rem;
+  border: 0.2rem ridge transparent;
+  border-radius: 0.8rem;
   gap: 1.6rem;
+  transition: background-color 0.5s ease-in, border 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.contacts-cont .grid .contacts-group .contacts-list .info:hover {
+  background-color: var(--blue-100);
+}
+
+.contacts-cont .grid .contacts-group .contacts-list .info:active {
+  border: 0.2rem ridge var(--gray-200);
 }
 
 .contacts-cont .grid .contacts-group .contacts-list .info .avatar-cont {
   width: 4.8rem;
   height: 4.8rem;
-  border-radius: 9.9rem;
+  border-radius: 99rem;
+  overflow: hidden;
+}
+
+.contacts-cont .grid .contacts-group .contacts-list .info .avatar-cont .avatar {
+  width: 100%;
+  height: auto;
 }
 
 .contacts-cont .grid .contacts-group .contacts-list .info .contact {
   display: flex;
   flex-direction: column;
-  margin-bottom: 0.5rem;
+  gap: 0.5rem;
+}
+
+/* remover o agrupamento que não possui contato */
+.contacts-cont .grid .contacts-group:not(:has(.contacts-list)) {
+  display: none;
 }
 
 /* Barra de rolagem para o WebKit (Chrome, Safari e Edge) */
 .grid::-webkit-scrollbar {
-  max-width: 0.8rem; /* Largura da barra */
-  min-height: 5rem; /* Altura da barra */
+  width: 0.8rem;
   background-color: var(--blue-300);
 }
 
