@@ -20,6 +20,7 @@
   </head>
   <body>
     <div id="app">
+      <!-- start HEADER -->
       <header>
         <div class="header-cont">
           <div class="header">
@@ -43,14 +44,18 @@
             <input
               type="text"
               id="search-input"
+              onkeyup="filterContacts()"
               placeholder="Busque por nome ou por dados de contato..."
             />
           </div>
         </div>
       </header>
+      <!-- End HEADER -->
+      <!-- start MAIN -->
       <main>
         <div class="contacts-cont">
           <div class="grid">
+            <!-- start A -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">A</h3>
@@ -72,6 +77,8 @@
                 </div>
               </div>
             </div>
+            <!-- end A -->
+            <!-- start B -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">B</h3>
@@ -82,7 +89,7 @@
                     <img
                       class="avatar"
                       id="avatar"
-                      src="../assets/avatars/3c3b1c7e-cb3e-46a7-a457-92136fa5ee2f.webp"
+                      src="../assets/avatars/5a29c153-9cd0-4a91-83b1-884a016d3dde.webp"
                       alt="Avatar do contato"
                     />
                   </div>
@@ -107,6 +114,8 @@
                 </div>
               </div>
             </div>
+            <!-- end B -->
+            <!-- start C -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">C</h3>
@@ -142,6 +151,8 @@
                 </div>
               </div>
             </div>
+            <!-- end C -->
+            <!-- start D -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">D</h3>
@@ -163,6 +174,8 @@
                 </div>
               </div>
             </div>
+            <!-- end D -->
+            <!-- start E -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">E</h3>
@@ -184,6 +197,8 @@
                 </div>
               </div>
             </div>
+            <!-- end E -->
+            <!-- start F -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">F</h3>
@@ -203,103 +218,297 @@
                     <h4 class="number">(11) 90779-9876</h4>
                   </div>
                 </div>
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/5a29c153-9cd0-4a91-83b1-884a016d3dde.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Frederico Macário</h3>
+                    <h4 class="number">(31) 92922-9292</h4>
+                  </div>
+                </div>
               </div>
             </div>
+            <!-- end F -->
+            <!-- Start G -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">G</h3>
               </div>
             </div>
+            <!-- end G -->
+            <!-- start H -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">H</h3>
               </div>
             </div>
+            <!-- end H -->
+            <!-- start I -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">I</h3>
               </div>
             </div>
+            <!-- end I -->
+            <!-- start J -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">J</h3>
               </div>
             </div>
+            <!-- end J -->
+            <!-- start K -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">K</h3>
               </div>
             </div>
+            <!-- end K -->
+            <!-- start L -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">L</h3>
               </div>
+              <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/3c7ad30f-0d9b-4c17-9b7a-a7d56e1f22d2.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Lucas Curzio</h3>
+                    <h4 class="number">(99) 99111-0000</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end L -->
+            <!-- start M -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">M</h3>
               </div>
+              <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/25c2bdca-c11c-40fd-9d32-14343e226b83.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Marcel Kaled</h3>
+                    <h4 class="number">(32) 99999-9999</h4>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/bebb5be4-ad0c-4af3-8811-12cded6148af.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Michel Kaled</h3>
+                    <h4 class="number">(21) 99999-9998</h4>
+                  </div>
+                </div>
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/0fcb5bd6-5bb9-4691-8fb1-302a9588b9a8.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Munir Kaled</h3>
+                    <h4 class="number">(83) 99999-9997</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end M -->
+            <!-- start N -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">N</h3>
               </div>
             </div>
+            <!-- end N -->
+            <!-- start O -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">O</h3>
               </div>
             </div>
+            <!-- end O -->
+            <!-- start P-->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">P</h3>
               </div>
+              <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/9620d7b2-daa0-4ae4-a0ea-19cb82ad5ade.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Palpatine</h3>
+                    <h4 class="number">(XX) XXXXX-XXXX</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end P-->
+            <!-- start Q-->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">Q</h3>
               </div>
             </div>
+            <!-- end Q -->
+            <!-- start R -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">R</h3>
               </div>
+              <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/f347d0c6-0f8d-4f2d-8386-93056479a40f.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Rapha</h3>
+                    <h4 class="number">(32) 90779-2222</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end R -->
+            <!-- start S -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">S</h3>
               </div>
+               <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/0a7a0f13-e0f1-4b04-a18c-2b0aff0b1707.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Storm Tropper</h3>
+                    <h4 class="number">(66) 99000-9606</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end S -->
+            <!-- start T -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">T</h3>
               </div>
+              <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/286365b1-d62b-4ef9-83cf-18700b7eb9c2.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Thrawn</h3>
+                    <h4 class="number">(66) 99666-9666</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end T -->
+            <!-- start U -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">U</h3>
               </div>
             </div>
+            <!-- end U -->
+            <!-- start V -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">V</h3>
               </div>
             </div>
+            <!-- end V -->
+            <!-- start W -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">W</h3>
               </div>
             </div>
+            <!-- end W -->
+            <!-- start X -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">X</h3>
               </div>
             </div>
+            <!-- end X -->
+            <!-- start Y -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">Y</h3>
               </div>
+              <div class="contacts-list">
+                <div class="info">
+                  <div class="avatar-cont">
+                    <img
+                      class="avatar"
+                      id="avatar"
+                      src="../assets/avatars/78899bf3-0a7d-428f-a634-45ea473e0c16.webp"
+                      alt="Avatar do contato"
+                    />
+                  </div>
+                  <div class="contact">
+                    <h3 class="name">Yoda Master</h3>
+                    <h4 class="number">(00) 00000-0000</h4>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- end Y -->
+            <!-- start Z -->
             <div class="contacts-group">
               <div class="letter-cont">
                 <h3 class="alphabet">Z</h3>
@@ -307,8 +516,10 @@
             </div>
           </div>
         </div>
+        <!-- end MAIN -->
       </main>
     </div>
   </body>
-  <script src="./utils/select-random-letter-colors.js" ></script>
+  <script src="./utils/select-random-letter-colors.js"></script>
+  <script src="./utils/contact-filter.js"></script>
 </html>

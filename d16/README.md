@@ -34,6 +34,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HTML e CSS
 - Git e Github
 - Figma
+- Avatares dos contatos gerados por [Microsoft Bing Image Generator](https://www.bing.com/create)
 
 ## 🔖 Layout
 

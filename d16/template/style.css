@@ -9,6 +9,7 @@
   scroll-behavior: smooth;
   text-rendering: optimizelegibility;
   font-variant-numeric: lining-nums;
+  -webkit-tap-highlight-color: transparent;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
