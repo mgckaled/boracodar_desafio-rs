@@ -30,7 +30,8 @@
     "d13",
     "d14",
     "d15",
-    "d16"
+    "d16",
+    "d17"
   ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.57.1",
