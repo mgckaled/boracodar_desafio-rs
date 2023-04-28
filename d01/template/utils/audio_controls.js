@@ -11,7 +11,7 @@ const playButton = document.getElementById('play')
 const imgIcon = document.getElementById('img-icon')
 
 // função de começar ou parar música
-function playAudio () {
+function playAudio() {
   if (audio.paused) {
     audio.src = `../assets/audio/${playlist[currentTrackIndex]}`
     imgIcon.src = '../assets/icons/pause.svg'
@@ -23,7 +23,7 @@ function playAudio () {
 }
 
 // ir para próxima faixa
-function nextTrack () {
+function nextTrack() {
   currentTrackIndex++
   if (currentTrackIndex >= playlist.length) {
     currentTrackIndex = 0
@@ -32,7 +32,7 @@ function nextTrack () {
 }
 
 // ir para a faixa anterior
-function previousTrack () {
+function previousTrack() {
   currentTrackIndex--
   if (currentTrackIndex < 0) {
     currentTrackIndex = playlist.length - 1
@@ -40,12 +40,12 @@ function previousTrack () {
   playAudio()
 }
 // voltar 10s da faixa corrente
-function skipBackward () {
+function skipBackward() {
   audio.currentTime -= 10
 }
 
 // adiantar 10s da faixa corrente
-function skipForward () {
+function skipForward() {
   audio.currentTime += 10
 }
 

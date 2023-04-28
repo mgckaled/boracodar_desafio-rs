@@ -5,11 +5,8 @@ const operationDisplay = document.getElementById('op-display')
 const resultDisplay = document.getElementById('result-display')
 let inputBuffer = ''
 
-function appendInput (input) {
-  if (
-    inputBuffer === '' &&
-    (input === '*' || input === '/' || input === '+' || input === '-')
-  ) {
+function appendInput(input) {
+  if (inputBuffer === '' && (input === '*' || input === '/' || input === '+' || input === '-')) {
     return
   }
   inputBuffer += input
@@ -41,7 +38,7 @@ function appendInput (input) {
   resultDisplay.value = ''
 }
 
-function calculateResult () {
+function calculateResult() {
   if (
     inputBuffer === '' ||
     inputBuffer.slice(-1) === '+' ||
@@ -66,13 +63,13 @@ function calculateResult () {
   }
 }
 
-function clearAll () {
+function clearAll() {
   inputBuffer = ''
   operationDisplay.value = ''
   resultDisplay.value = ''
 }
 
-function clearEntry () {
+function clearEntry() {
   if (inputBuffer.slice(-1) === ' ') {
     operationDisplay.value = operationDisplay.value.slice(0, -2)
   }
@@ -80,7 +77,7 @@ function clearEntry () {
   resultDisplay.value = ''
 }
 
-function toggleSign () {
+function toggleSign() {
   if (
     inputBuffer.slice(-1) === '+' ||
     inputBuffer.slice(-1) === '-' ||
@@ -102,7 +99,7 @@ function toggleSign () {
   resultDisplay.value = ''
 }
 
-function calculatePercentage () {
+function calculatePercentage() {
   if (
     inputBuffer === '' ||
     inputBuffer.slice(-1) === '+' ||
@@ -125,6 +122,6 @@ function calculatePercentage () {
   }
 }
 
-function numberWithCommas (number) {
+function numberWithCommas(number) {
   return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
 }

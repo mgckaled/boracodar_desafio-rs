@@ -1,4 +1,3 @@
-
 const dropZone = document.querySelector('#upload-box')
 const fileBox = document.querySelector('#new-file-box')
 const fileName = document.querySelector('#file-name')
@@ -14,7 +13,7 @@ dropZone.addEventListener('click', selectFile)
 dropZone.addEventListener('dragover', handleDragOver)
 dropZone.addEventListener('drop', handleFileSelect)
 
-function showFileBox () {
+function showFileBox() {
   fileBox.style.display = 'flex'
 }
 
@@ -23,11 +22,11 @@ function showFileBox () {
 //   fileIconBox.setAttribute('b-color', 'green')
 // }
 
-function selectFile () {
+function selectFile() {
   fileInput.click()
 }
 
-function handleFileSelect (event) {
+function handleFileSelect(event) {
   event.stopPropagation()
   event.preventDefault()
   showFileBox()
@@ -46,7 +45,7 @@ function handleFileSelect (event) {
   // handleChangeColorBoxAndIcon()
 }
 
-function handleDragOver (event) {
+function handleDragOver(event) {
   event.stopPropagation()
   event.preventDefault()
 }
@@ -68,7 +67,7 @@ fileInput.addEventListener('change', () => {
   // handleChangeColorBoxAndIcon()
 })
 
-function formatBytes (bytes) {
+function formatBytes(bytes) {
   const sizes = ['Bytes', 'KB', 'MB', 'GB', 'TB']
   if (bytes === 0) {
     return '0 Bytes'

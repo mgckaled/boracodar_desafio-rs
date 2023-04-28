@@ -7,7 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  text-rendering: optimizeLegibility;
+  text-rendering: optimizelegibility;
   font-variant-numeric: lining-nums;
   font-feature-settings: 'lnum';
   -webkit-font-smoothing: antialiased;

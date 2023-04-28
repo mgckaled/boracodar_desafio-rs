@@ -1,4 +1,5 @@
 <!-- markdownlint-disable MD033 -->
+
 # `Desafio #07 - Site de Busca de Bloco de Carnaval`
 
 **Desafio da Semana**: Desenvolva uma página onde o usuário consiga buscar blocos de carnaval. Use sua criatividade e fique à vontade para ir além nesse projeto.
@@ -30,18 +31,18 @@ Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_des
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML, CSS e JS
 - Git e Github
 - Figma
-- Phosphor Icons
+- [Phosphor Icons](https://github.com/phosphor-icons/web)
 
 ### 📚 Um poudo do que vimos nesse desafio
 
 - Organização de Github, readme, imagens, hacks para tabela de readme
 - Input, Select e Button customizados
 - Uso de ícones e fontes customizdas
-- HTML: `form`,`header`,`main`,`section`,`form`,`select`,`img`,
-- CSS: `all`, `overflow`, `::before`, `::after`, `rem`, `position`, `fit-content`, `flex e grid`, `@media`, `responsividade`
+- HTML: `<form>`,`<header>`,`<main>`,`<section>`,`<select>` e `<img>`
+- CSS: `all`, `overflow`, `::before`, `::after`, `rem`, `position`, `fit-content`, `flex e grid`, `@media` e `responsividade`
 - Novo DevTools do Edge
 
 ## 🔖 Layout

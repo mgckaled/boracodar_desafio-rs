@@ -1,4 +1,5 @@
 <!-- markdownlint-disable MD033 -->
+
 # `Desafio #01 - Music Player`
 
 **Desafio da semana**: Desenvolva o player conforme especificado utilizando as tecnologias da sua preferência. Você pode adicionar outros detalhes, como animações.
@@ -30,7 +31,7 @@ Indisponível.
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML, CSS e Javascript
 - Git e Github
 - Figma
 

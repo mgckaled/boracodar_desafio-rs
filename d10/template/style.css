@@ -215,11 +215,7 @@ h2.title {
   height: 21rem;
   display: block;
   border-radius: 50%;
-  background: linear-gradient(
-    180deg,
-    rgb(251 219 96 / 20%) 0%,
-    rgb(251 219 96 / 0%) 101.89%
-  );
+  background: linear-gradient(180deg, rgb(251 219 96 / 20%) 0%, rgb(251 219 96 / 0%) 101.89%);
 
   --mask: linear-gradient(0deg, white 50%, transparent 0%);
 

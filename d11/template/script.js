@@ -2,7 +2,7 @@
 
 let senha
 
-function togglePassword () {
+function togglePassword() {
   document.querySelectorAll('.eye').forEach((eye) => eye.classList.toggle('hide'))
 
   const type = senha.getAttribute('type') === 'password' ? 'text' : 'password'
