@@ -1,23 +1,139 @@
-/*  ==== GLOBAL STYLES ==== */
+/*  ==== START STYLES ==== */
 
-*,
-*::after,
-*::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
-  font-size: 62.5%;
-}
-
-html{
+  font-size: 62.5%; /* resetar a fonte para 10px (= 1rem) */
   font-family: Lato, sans-serif;
+
+  --color-background: #f5f5f5;
+  --colro-card-primary: #fff;
+  --color-item-on-hover: #ece0fd;
+  --color-item-highlight: #6200ee;
+  --color-font-heading: #333;
+  --color-font-text: #666;
+  --color-font-on-highlight: #fff;
 }
 
+/*  ==== END STYLES ==== */
 
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  min-height: 100vh;
+  background: var(--color-background);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-height: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+#prev.material-symbols-outlined,
+#next.material-symbols-outlined {
+  font-variation-settings: 'FILL', 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.wrapper {
+  max-width: 34.4rem;
+  padding: 3.2rem;
+  background: var(--colro-card-primary);
+  border-radius: 1.6rem;
+  box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 12%);
+}
+
+header .icon-wrapper span {
+  color: var(--color-font-text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 3.2rem;
+  width: 3.2rem;
+  cursor: pointer;
+}
+
+header .icon-wrapper span:hover {
+  background: var(--color-item-on-hover);
+}
+
+.wrapper header .current-date {
+  font-weight: 700;
+  line-height: 150%;
+  color: var(--color-font-text);
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+}
+
+.calendar li {
+  min-height: 4rem;
+  min-width: 4rem;
+  color: var(--color-font-text);
+  border-radius: 0.8rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.calendar .weeks li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 7);
+  max-height: 3.2rem;
+  padding: 0.8rem;
+  font-family: Roboto, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  cursor: default;
+}
+
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  padding: 1rem;
+  border-radius: 0.8rem;
+}
+
+.calendar .days li:hover {
+  background-color: var(--color-item-on-hover);
+}
+
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #666;
+}
+
+.days li::before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  padding: 1rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}

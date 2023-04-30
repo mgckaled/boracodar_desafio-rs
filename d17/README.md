@@ -31,9 +31,10 @@ Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_des
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- HTML e CSS
+- HTML, CSS e JS
 - Git e Github
 - Figma
+- [Material Icons](https://fonts.google.com/icons?hl=pt-br&icon.set=Material+Icons)
 
 ## 🔖 Layout
 
