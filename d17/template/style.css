@@ -1,4 +1,4 @@
-/*  ==== START STYLES ==== */
+/*  ==== START GLOBAL STYLES ==== */
 
 * {
   margin: 0;
@@ -20,9 +20,10 @@
   --color-font-heading: #333;
   --color-font-text: #666;
   --color-font-on-highlight: #fff;
+  --color-font-desactivated: #aaa;
 }
 
-/*  ==== END STYLES ==== */
+/*  ==== END GLOBAL STYLES ==== */
 
 body {
   display: flex;
@@ -120,11 +121,11 @@ header .icon-wrapper span:hover {
 }
 
 .days li.inactive {
-  color: #aaa;
+  color: var(--color-font-desactivated);
 }
 
 .days li.active {
-  color: #666;
+  color: var(--color-font-text);
 }
 
 .days li::before {
@@ -136,4 +137,36 @@ header .icon-wrapper span:hover {
   padding: 1rem;
   border-radius: 50%;
   transform: translate(-50%, -50%);
+}
+
+/* incluir um ponto abaixo do dia corrente */
+.days li.active::after {
+  content: '';
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-font-text);
+  border-radius: 50%;
+}
+
+/* alterar o estilo dos dias selecionados */
+.calendar .days li.selected {
+  background-color: var(--color-item-highlight);
+  color: var(--color-font-on-highlight);
+}
+
+/* modificar o estilo do ponto da data atual quando selecionado */
+.days li.active.selected::after {
+  content: '';
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: var(--color-font-on-highlight);
+  border-radius: 50%;
 }
