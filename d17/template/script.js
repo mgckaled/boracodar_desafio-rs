@@ -1,7 +1,9 @@
 // associar os elementos html a variaveis
 const daysTag = document.querySelector('.days')
 const currentDate = document.querySelector('.current-date')
+const currentYear = document.querySelector('.current-date.year')
 const prevNextIcon = document.querySelectorAll('#prev, #next')
+const prevNextYearIcon = document.querySelectorAll('#prev-year, #next-year')
 
 // gerar nova data: ano e mês
 let date = new Date()
@@ -60,10 +62,22 @@ const renderCalendar = () => {
     // criar uma tag <li> para os primeiros dias do mês seguinte
     liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
   }
-  currentDate.innerText = `${months[currMonth]} ${currYear}` // passing current mon and yr as currentDate text
+
+  // add a dot below the current month
+  const currentMonth = document.querySelectorAll('.month')[currMonth]
+  const dot = document.createElement('div')
+  dot.classList.add('dot')
+  currentMonth.appendChild(dot)
+
+  // header first section
+  currentDate.innerText = `${months[currMonth]} ${currYear}`
+  // header second section
+  currentYear.innerText = `${currYear}`
+
+  // passing current mon and yr as currentDate text
   daysTag.innerHTML = liTag
 
-  // Add click event listener to each date element
+  // logic of days selections
   const dateElements = document.querySelectorAll('.days li')
   dateElements.forEach((dateEl) => {
     dateEl.addEventListener('click', () => {
@@ -102,6 +116,8 @@ const renderCalendar = () => {
 }
 
 renderCalendar()
+
+// click event for first section - days
 prevNextIcon.forEach((icon) => {
   // associar os ícones id='prev' e id='next'
   icon.addEventListener('click', () => {
@@ -118,5 +134,14 @@ prevNextIcon.forEach((icon) => {
       date = new Date() // pass the current date as date value
     }
     renderCalendar() // calling renderCalendar function
+  })
+})
+
+// click event for second section - months
+prevNextYearIcon.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    currYear = icon.id === 'prev-year' ? currYear - 1 : currYear + 1
+    date = new Date(currYear, currMonth, new Date().getDate())
+    renderCalendar()
   })
 })

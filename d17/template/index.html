@@ -24,19 +24,22 @@
     <script src="script.js" defer></script>
   </head>
 
-  <body>
+  <body class="flex justify-center">
     <section class="wrapper">
-      <header>
+      <header class="flex">
         <div class="icon-wrapper">
-          <span id="prev" class="material-symbols-outlined"> chevron_left </span>
+          <span id="prev" class="material-symbols-outlined justify-center"> chevron_left </span>
         </div>
-        <p class="current-date"></p>
+        <div class="month-year-wrapper flex">
+          <p class="current-date"></p>
+          <span id="expand" class="material-symbols-outlined justify-center"> expand_more </span>
+        </div>
         <div class="icon-wrapper">
-          <span id="next" class="material-symbols-outlined"> chevron_right </span>
+          <span id="next" class="material-symbols-outlined justify-center"> chevron_right </span>
         </div>
       </header>
-      <div class="calendar">
-        <ul class="weeks">
+      <div class="calendar justify-center">
+        <ul class="weeks flex">
           <li>Dom</li>
           <li>Seg</li>
           <li>Ter</li>
@@ -45,7 +48,38 @@
           <li>Sex</li>
           <li>Sab</li>
         </ul>
-        <ul class="days"></ul>
+        <ul class="days flex"></ul>
+      </div>
+    </section>
+    <section class="wrapper modal">
+      <header class="flex">
+        <div class="icon-wrapper">
+          <span id="prev-year" class="material-symbols-outlined justify-center">
+            chevron_left
+          </span>
+        </div>
+        <div class="month-year-wrapper flex">
+          <p class="current-date year"></p>
+        </div>
+        <div class="icon-wrapper">
+          <span id="next-year" class="material-symbols-outlined justify-center">
+            chevron_right
+          </span>
+        </div>
+      </header>
+      <div class="months-grid">
+        <div class="month">Jan</div>
+        <div class="month">Fev</div>
+        <div class="month">Mar</div>
+        <div class="month">Abr</div>
+        <div class="month">Mai</div>
+        <div class="month">Jun</div>
+        <div class="month">Jul</div>
+        <div class="month">Ago</div>
+        <div class="month">Set</div>
+        <div class="month">Out</div>
+        <div class="month">Nov</div>
+        <div class="month">Dez</div>
       </div>
     </section>
   </body>
