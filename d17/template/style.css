@@ -23,8 +23,6 @@
   --color-font-desactivated: #aaa;
 }
 
-/*  ==== END GLOBAL STYLES ==== */
-
 .flex {
   display: flex;
 }
@@ -33,30 +31,37 @@
   justify-content: center;
 }
 
-body {
+.align-center {
   align-items: center;
+}
+
+body {
   min-height: 100vh;
   background: var(--color-background);
   font-size: 1.6rem;
   font-weight: 400;
-  gap: 10rem;
+  gap: 9.2rem;
 }
 
 header {
-  align-items: center;
   justify-content: space-between;
   max-height: 2.4rem;
   margin-bottom: 2.4rem;
 }
 
+/* icons styles */
 #prev.material-symbols-outlined,
 #next.material-symbols-outlined,
 #expand.material-symbols-outlined,
 #prev-year.material-symbols-outlined,
 #next-year.material-symbols-outlined {
   font-variation-settings: 'FILL', 'wght' 400, 'GRAD' 0, 'opsz' 24;
-  color: var(--color-font-text)
+  color: var(--color-font-text);
 }
+
+/*  ==== END GLOBAL STYLES ==== */
+
+/*  ==== START FIRST SECTION STYLES - DAYS ==== */
 
 .wrapper {
   max-width: 34.4rem;
@@ -106,7 +111,6 @@ header .icon-wrapper span:hover {
 }
 
 .calendar .weeks li {
-  align-items: center;
   width: calc(100% / 7);
   max-height: 3.2rem;
   padding: 0.8rem;
@@ -146,37 +150,9 @@ header .icon-wrapper span:hover {
   transform: translate(-50%, -50%);
 }
 
-/* incluir um ponto abaixo do dia corrente */
-.days li.active::after {
-  content: '';
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: var(--color-font-text);
-  border-radius: 50%;
-}
+/*  ==== END FIRST SECTION STYLES - DAYS ==== */
 
-/* alterar o estilo dos dias selecionados */
-.calendar .days li.selected {
-  background-color: var(--color-item-highlight);
-  color: var(--color-font-on-highlight);
-}
-
-/* modificar o estilo do ponto da data atual quando selecionado */
-.days li.active.selected::after {
-  content: '';
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: var(--color-font-on-highlight);
-  border-radius: 50%;
-}
+/*  ==== START SECOND SECTION STYLES - MONTHS ==== */
 
 .months-grid {
   display: grid;
@@ -202,6 +178,11 @@ header .icon-wrapper span:hover {
   background-color: var(--color-item-on-hover);
 }
 
+/*  ==== END SECOND SECTION STYLES - MONTHS ==== */
+
+/* incluir um ponto abaixo do dia ou mês corrente */
+.days li.active::after,
+.days li.active.selected::after,
 .months-grid .month .dot::after {
   content: '';
   position: absolute;
@@ -212,4 +193,16 @@ header .icon-wrapper span:hover {
   height: 0.4rem;
   background-color: var(--color-font-text);
   border-radius: 50%;
+}
+
+/* alterar o estilo dos dias e meses selecionados */
+.calendar .days li.selected,
+.months-grid .month {
+  background-color: var(--color-item-highlight);
+  color: var(--color-font-on-highlight);
+}
+
+/* modificar o estilo do ponto da data atual quando selecionado */
+.days li.active.selected::after {
+  background-color: var(--color-font-on-highlight);
 }
