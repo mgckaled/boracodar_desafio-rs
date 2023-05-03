@@ -197,12 +197,13 @@ header .icon-wrapper span:hover {
 
 /* alterar o estilo dos dias e meses selecionados */
 .calendar .days li.selected,
-.months-grid .month {
+.months-grid .month.selected {
   background-color: var(--color-item-highlight);
   color: var(--color-font-on-highlight);
 }
 
-/* modificar o estilo do ponto da data atual quando selecionado */
-.days li.active.selected::after {
+/* modificar o estilo do ponto no dia ou mês atual quando selecionado */
+.days li.active.selected::after,
+.months-grid .month.selected .dot::after {
   background-color: var(--color-font-on-highlight);
 }

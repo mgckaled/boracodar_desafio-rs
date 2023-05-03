@@ -1,5 +1,6 @@
 // associar os elementos html a variaveis
 const daysTag = document.querySelector('.days')
+const monthsTag = document.querySelectorAll('.month')
 const currentDate = document.querySelector('.current-date')
 const currentYear = document.querySelector('.current-date.year')
 const prevNextIcon = document.querySelectorAll('#prev, #next')
@@ -63,18 +64,12 @@ const renderCalendar = () => {
     liTag += `<li class="inactive">${i - lastDayofMonth + 1}</li>`
   }
 
-  // add a dot below the current month
-  const currentMonth = document.querySelectorAll('.month')[currMonth]
-  const dot = document.createElement('div')
-  dot.classList.add('dot')
-  currentMonth.appendChild(dot)
-
   // header first section
   currentDate.innerText = `${months[currMonth]} ${currYear}`
   // header second section
   currentYear.innerText = `${currYear}`
 
-  // passing current mon and yr as currentDate text
+  // passing current month and year as currentDate text
   daysTag.innerHTML = liTag
 
   // logic of days selections
@@ -113,11 +108,39 @@ const renderCalendar = () => {
       selectedDatesList.innerHTML = selectedDatesHTML
     }
   }
+
+  // logic for month selection
+  monthsTag.forEach((month) => {
+    month.addEventListener('click', () => {
+      // remove the 'selected' class from all month divs
+      monthsTag.forEach((m) => m.classList.remove('selected'))
+
+      // add the 'selected' class to the clicked month div
+      month.classList.add('selected')
+    })
+  })
 }
+
+// add click event listener to each month tag
+monthsTag.forEach((monthTag, index) => {
+  monthTag.addEventListener('click', () => {
+    // update currMonth to the selected month
+    currMonth = index
+
+    // re-render the calendar with the selected month
+    renderCalendar()
+  })
+})
 
 renderCalendar()
 
-// click event for first section - days
+// add a dot below the current month
+const currentMonth = document.querySelectorAll('.month')[currMonth]
+const dot = document.createElement('div')
+dot.classList.add('dot')
+currentMonth.appendChild(dot)
+
+// click event icons for first section - days
 prevNextIcon.forEach((icon) => {
   // associar os ícones id='prev' e id='next'
   icon.addEventListener('click', () => {
@@ -137,7 +160,7 @@ prevNextIcon.forEach((icon) => {
   })
 })
 
-// click event for second section - months
+// click event icons for second section - months
 prevNextYearIcon.forEach((icon) => {
   icon.addEventListener('click', () => {
     currYear = icon.id === 'prev-year' ? currYear - 1 : currYear + 1
