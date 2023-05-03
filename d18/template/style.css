@@ -1,0 +1,47 @@
+/*  ==== START GLOBAL STYLES ==== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%; /* resetar a fonte para 10px (= 1rem) */
+  font-family: Source Sans Pro, sans-serif;
+  line-height: 130%;
+
+  --color-background: #07021a;
+  --color-card-primary: #121214;
+  --color-font-heading: #ece4ef;
+  --color-font-heading-itens: #9c83a7;
+  --color-font-text: #d8cede;
+}
+
+body {
+  background-color: var(--color-background);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+h1 {
+  color: var(--color-font-heading);
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+p {
+  color: var(--color-font-text);
+}
+
+.heading-itens {
+  color: var(--color-font-heading-itens);
+  font-weight: 400;
+}
+
+/*  ==== END GLOBAL STYLES ==== */
