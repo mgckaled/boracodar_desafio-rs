@@ -12,7 +12,6 @@
 :root {
   font-size: 62.5%; /* resetar a fonte para 10px (= 1rem) */
   font-family: Source Sans Pro, sans-serif;
-  line-height: 130%;
 
   --color-background: #07021a;
   --color-card-primary: #121214;
@@ -21,10 +20,15 @@
   --color-font-text: #d8cede;
 }
 
+/*  ==== END GLOBAL STYLES ==== */
+
 body {
   background-color: var(--color-background);
   font-size: 1.4rem;
   font-weight: 700;
+  line-height: 130%;
+  text-align: start;
+  font-style: normal;
 }
 
 h1 {
@@ -33,15 +37,46 @@ h1 {
   line-height: 4rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }
 
 p {
   color: var(--color-font-text);
+  max-width: 20rem;
+}
+
+.introduction {
+  font-weight: 400;
+  max-width: 26rem;
+  max-height: 7rem;
+  margin-bottom: 4.8rem;
 }
 
 .heading-itens {
   color: var(--color-font-heading-itens);
   font-weight: 400;
+  margin-bottom: 0.2rem;
 }
 
-/*  ==== END GLOBAL STYLES ==== */
+.description {
+  margin-bottom: 1.6rem;
+}
+
+.card-wrapper {
+  position: absolute;
+  overflow: hidden;
+  left: calc(50% - 43.6rem / 2);
+  top: calc(50% - 60.8rem / 2);
+  width: 43.6rem;
+  height: 60.8rem;
+  padding: 4rem 3.8rem;
+  border-radius: 2rem;
+  background: url(../assets/bg_images/bg_card_rey.png);
+  box-shadow: 0px 294px 118px rgba(0, 0, 0, 0.03), 0px 165px 99px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+}
