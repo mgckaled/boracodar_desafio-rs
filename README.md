@@ -153,6 +153,12 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td align="center" ><a href="17"><img width="200px" src="d18/.github/assets/preview.jpg" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d18/template/" target="_blank" ><img width="40px" src="d18/.github/assets/deploy.svg" /></a></td>
         </tr>
+        <tr>
+            <td><code>19</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d19" target="_blank" ><code>widget de transporte</code></a></td>
+            <td align="center" ><a href="17"><img width="200px" src="d19/.github/assets/preview.jpg" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d19/template/" target="_blank" ><img width="40px" src="d19/.github/assets/deploy.svg" /></a></td>
+        </tr>
     </tbody>
   </table>
 </p>

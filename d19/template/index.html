@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/svg" href="../assets/favicon/fav-icon.svg" />
+    <title>Widget de Transporte</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <main>
+      <section class="main-cont flex column">
+        <div class="modal-cont flex jc-center ai-center"></div>
+
+        <div class="text-cont flex column">
+          <h1>Encontre <span>Boris</span> no local de partida</h1>
+          <p>Chega em 3 minutos (800 metros)</p>
+        </div>
+
+        <div class="info-car flex row jc-space-between ai-center">
+          <div class="profile-cont flex column jc-center ai-center">
+            <div class="avatar-area">
+              <img src="../assets/images/avatar.png" alt="profile avatar" />
+            </div>
+            <div class="ranking flex row jc-center ai-center">
+              <i class="ph-fill ph-star"></i>
+              <h6>5.0</h6>
+            </div>
+            <p><small>Boris C.</small></p>
+          </div>
+          <img src="../assets/images/car.png" alt="purple car" />
+          <div class="car-reference flex column jc-center ai-center">
+            <h1>BCD-0D19</h1>
+            <p>Honda Civic Roxo</p>
+          </div>
+        </div>
+
+        <div class="input-icon-cont flex row jc-space-between">
+          <form>
+            <div class="input-wrapper flex row ai-center">
+              <label class="sr-only" for="message">Enviar mensagem para Borir...</label>
+              <input
+                id="message"
+                name="message"
+                type="text"
+                placeholder="Enviar mensagem para Boris..."
+              />
+              <i class="ph ph-paper-plane-right"></i>
+            </div>
+          </form>
+          <div class="icons-wrapper flex row ai-center">
+            <i class="ph-fill ph-phone"></i>
+            <i class="ph-fill ph-shield-plus"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
