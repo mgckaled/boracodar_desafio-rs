@@ -1,10 +1,9 @@
-/* ====== GLOBAL STYLES ======= */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,12 +13,26 @@
 
   --color-background: #111112;
   --color-text: #fff;
+  --scrollbar-thumb-color: #c5baba;
+}
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--color-background);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
 }
 
 body {
   font-family: 'Hepta Slab', serif;
   background-color: var(--color-background);
   color: var(--color-text);
+  overflow-y: scroll;
 }
 
 .main-container {
@@ -32,15 +45,11 @@ body {
 }
 
 .left-container {
-  display: flex;
-  flex-flow: column;
-  align-items: flex-start;
-  justify-content: center;
   width: 38.5rem;
 }
 
 .left-container p {
-  font: 400 4.8rem;
+  font-weight: 400;
   font-size: 4.8rem;
   line-height: 6rem;
 }
@@ -83,6 +92,12 @@ body {
   height: 100%;
   object-fit: cover;
   position: relative;
+  border: 2px solid transparent;
+  transition: border 0.6s ease-in-out;
+}
+
+.grid-area > div:hover > img {
+  border: 2px solid var(--color-text);
 }
 
 .g-1 {
@@ -98,9 +113,27 @@ body {
   grid-area: g-4;
 }
 
-.g1 p {
-  margin-top: -10rem;
+.image-title {
   position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.4rem;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%);
+  font-weight: 300;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+  color: var(--color-text);
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
 }
 
+.grid-area > div:hover .image-title {
+  opacity: 1;
+}
 
+/* Animação do texto da <section> esquerda */
+#scroll-animation {
+  transition: transform 2.6s ease-in-out;
+}
