@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Brand */
+  --brand-color: #9333EA;
+  --brand-color-light: #A855F7;
+  --brand-color-lither: #C084FC;
+
+  /* Neutrals */
+  --text-color-primary: #F9FAFB;
+  --text-color-secundary: #E4E4E7;
+  --close-button-color: #A1A1AA;
+  --stroke-color: #3F3F46;
+  --surface-color: #18181B;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  cursor: default;
+}
+
+

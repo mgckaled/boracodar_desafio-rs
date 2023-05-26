@@ -20,25 +20,19 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
         <th align="center">
           <img width="250" height="1">
           <p>
-            <small>
-              <code>projeto</code>
-            </small>
+            <code>projeto</code>
           </p>
         </th>
         <th align="center">
           <img width="201" height="1">
           <p align="center">
-            <small>
-              <code>preview</code>
-            </small>
+            <code>preview</code>
           </p>
         </th>
         <th align="center">
             <img width="50" height="1">
             <p align="center">
-                <small>
-                <code>deploy</code>
-                </small>
+              <code>deploy</code>
             </p>
         </th>
       </tr>
@@ -164,6 +158,12 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d20" target="_blank" ><code>galeria de imagens</code></a></td>
             <td align="center" ><a href="17"><img width="200px" src="d20/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d20/template/" target="_blank" ><img width="40px" src="d20/.github/assets/deploy.svg" /></a></td>
+        </tr>
+        <tr>
+            <td><code>21</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d21" target="_blank" ><code>carrinho de compras</code></a></td>
+            <td align="center" ><a href="17"><img width="200px" src="d21/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d21/template/" target="_blank" ><img width="40px" src="d21/.github/assets/deploy.svg" /></a></td>
         </tr>
     </tbody>
   </table>
