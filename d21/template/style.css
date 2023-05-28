@@ -3,6 +3,7 @@
 * {
   padding: 0;
   margin: 0;
+  border: none;
   box-sizing: border-box;
   scroll-behavior: smooth;
   text-rendering: optimizelegibility;
@@ -11,6 +12,8 @@
 }
 
 :root {
+  font-size: 62.5%;
+
   /* Brand */
   --brand-color: #9333ea;
   --brand-color-light: #a855f7;
@@ -38,17 +41,11 @@
 }
 
 html {
-  font-size: 62.5%;
-  background: var(--aside-color);
+  font-family: Inter, sans-serif;
 }
 
 body {
-  font-family: Inter, sans-serif;
-  display: grid;
-  grid-template-areas: 'site-area car-products';
-  grid-template-columns: 0.777fr 0.223fr;
-
-  /* grid-template-rows: 100vh; */
+  background-color: var(--aside-color);
   cursor: default;
 }
 
@@ -66,18 +63,30 @@ i {
   cursor: pointer;
 }
 
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+
 button {
-  width: 36.4rem;
+  width: 100%;
+  max-width: 36.4rem;
   height: 6.4rem;
   background-color: var(--brand-color);
   margin-top: 1.6rem;
   border-radius: 0.8rem;
   cursor: pointer;
-  transition: background-color 300ms ease-in-out;
+  transition: background-color 300ms ease-in-out, opacity 150ms ease-in-out;
 }
 
 button:hover {
   background-color: var(--brand-color-light);
+}
+
+button:active {
+  opacity: 0.8;
 }
 
 .flex {
@@ -108,14 +117,11 @@ button:hover {
   align-items: center;
 }
 
-.site-area {
-  grid-area: site-area;
-  background-color: var(--aside-color);
-}
-
-.car-products {
-  grid-area: car-products;
+.car-section {
+  max-width: 42.8rem;
+  align-items: flex-end;
   background-color: var(--surface-color);
+  float: right;
 }
 
 /* ==== HEADER STYLES ==== */
@@ -124,7 +130,7 @@ button:hover {
   position: sticky;
   top: 0;
   z-index: 1;
-  width: 42.8rem;
+  min-width: 42.8rem;
   padding: 2.4rem 2.4rem 2.4rem 3.2rem;
   border-bottom: 0.1rem solid var(--stroke-color);
 }
@@ -206,7 +212,7 @@ button:hover {
 }
 
 .item-qtd-cont span > p {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 
 /* ==== CHECKOUT STYLES ==== */
@@ -214,7 +220,7 @@ button:hover {
 .checkout-cont {
   position: sticky;
   top: 0;
-  width: initial;
+  min-width: 42.8rem;
   height: 22.4rem;
   padding: 3.2rem;
   gap: 1.6rem;
@@ -230,14 +236,32 @@ button:hover {
   gap: 0.8rem;
 }
 
-.tag-cont > p {
+.tag-cont > label {
   font-size: 1.6rem;
   color: var(--brand-color-light);
   transition: color 300ms ease-in-out;
+  cursor: text;
+  border: none;
 }
 
-.tag-cont > p:hover {
+.tag-cont > label:hover {
   color: var(--brand-color-lither);
+}
+
+.tag-cont > input {
+  display: none;
+  background-color: inherit;
+  height: 2.4rem;
+  width: 10.3rem;
+  font-size: 1.6rem;
+  color: var(--text-color-secundary);
+  border-bottom: 0.1rem solid var(--brand-color-light);
+}
+
+.tag-cont > i:last-of-type {
+  display: none;
+  font-size: 1.6rem;
+  color: var(--close-button-color);
 }
 
 .button > p {
@@ -250,8 +274,7 @@ button:hover {
 .ph-x {
   font-size: 2.4rem;
   color: var(--text-color-primary);
-  transition: color 300ms ease-in-out;
-  transform: trasform 1s ease-in;
+  transition: color 300ms ease-in-out, trasform 600ms;
 }
 
 .ph-x:hover {
@@ -266,8 +289,7 @@ button:hover {
 .ph-plus {
   font-size: 1.6rem;
   color: var(--brand-color-light);
-  transition: color 300ms ease-in-out;
-  transform: trasform 1s ease-in;
+  transition: color 300ms ease-in-out, trasform 600ms;
 }
 
 .ph-minus:hover,
@@ -296,7 +318,6 @@ button:hover {
   animation: spin 1.5s linear;
   font-size: 2.4rem;
   color: var(--text-color-primary);
-  z-index: 2;
 }
 
 @keyframes spin {
@@ -306,14 +327,5 @@ button:hover {
 
   100% {
     transform: rotate(360deg);
-  }
-}
-
-/*  ==== DIMENSIONS STYLES ==== */
-
-@media (width <= 428px) {
-  body {
-    grid-template-columns: 0fr 1fr;
-    grid-template-areas: 'site-area car-products';
   }
 }

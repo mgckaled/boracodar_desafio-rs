@@ -20,13 +20,12 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body>
-    <section class="site-area"></section>
-    <section class="car-products flex-start col">
-      <header class="header-cont flex jc-sb ai-c row fixed">
+    <section class="car-section flex col">
+      <header class="header-cont flex row jc-sb ai-c">
         <p>
           Seu carrinho tem <b><span id="products-number">5</span> iten(s)</b>
         </p>
-        <i class="ph-thin ph-x"></i>
+        <i class="ph-light ph-x"></i>
       </header>
       <div class="products-cont flex col">
         <div class="item-cont flex row ai-c">
@@ -42,7 +41,7 @@
               <p><b>R$ 8.599,90</b></p>
               <div class="flex row jc-sb">
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-minus"></i>
+                  <i class="ph ph-minus"></i>
                 </div>
                 <div class="item-qtd-cont flex jc-c ai-c">
                   <span id="iten-qtd"
@@ -50,7 +49,7 @@
                   >
                 </div>
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-plus"></i>
+                  <i class="ph ph-plus"></i>
                 </div>
               </div>
             </div>
@@ -66,7 +65,7 @@
               <p><b>R$ 959,90</b></p>
               <div class="flex row jc-sb">
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-minus"></i>
+                  <i class="ph ph-minus"></i>
                 </div>
                 <div class="item-qtd-cont flex jc-c ai-c">
                   <span id="iten-qtd"
@@ -74,7 +73,7 @@
                   >
                 </div>
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-plus"></i>
+                  <i class="ph ph-plus"></i>
                 </div>
               </div>
             </div>
@@ -90,7 +89,7 @@
               <p><b>R$ 1.002,00</b></p>
               <div class="flex row jc-sb">
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-minus"></i>
+                  <i class="ph ph-minus"></i>
                 </div>
                 <div class="item-qtd-cont flex jc-c ai-c">
                   <span id="iten-qtd"
@@ -98,7 +97,7 @@
                   >
                 </div>
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-plus"></i>
+                  <i class="ph ph-plus"></i>
                 </div>
               </div>
             </div>
@@ -114,7 +113,7 @@
               <p><b>R$ 99,90</b></p>
               <div class="flex row jc-sb">
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-minus"></i>
+                  <i class="ph ph-minus"></i>
                 </div>
                 <div class="item-qtd-cont flex jc-c ai-c">
                   <span id="iten-qtd"
@@ -122,7 +121,7 @@
                   >
                 </div>
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-plus"></i>
+                  <i class="ph ph-plus"></i>
                 </div>
               </div>
             </div>
@@ -138,7 +137,7 @@
               <p><b>R$ 19,90</b></p>
               <div class="flex row jc-sb">
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-minus"></i>
+                  <i class="ph ph-minus"></i>
                 </div>
                 <div class="item-qtd-cont flex jc-c ai-c">
                   <span id="iten-qtd"
@@ -146,7 +145,7 @@
                   >
                 </div>
                 <div class="icon-cont flex jc-c ai-c">
-                  <i class="ph-thin ph-plus"></i>
+                  <i class="ph ph-plus"></i>
                 </div>
               </div>
             </div>
@@ -158,9 +157,11 @@
           <p>Total:</p>
           <p id="car-total"><b>R$ 10.681,60</b></p>
         </div>
-        <div class="tag-cont flex row ai-c">
+        <div class="tag-cont flex row jc-fe ai-c">
           <i class="ph-thin ph-tag"></i>
-          <p>Adicionar cupom</p>
+          <label for="cupom-input" id="cupom-label">Adicionar cupom</label>
+          <input type="text" id="cupom-input" maxlength="12" />
+          <i class="ph-light ph-x" id="input-x-icon"></i>
         </div>
         <button class="button">
           <p id="btn-car">Finalizar compra</p>
@@ -168,8 +169,6 @@
         </button>
       </div>
     </section>
-
-    <!-- <i class="ph-thin ph-trash"></i> -->
-    <!-- <i class="ph-thin ph-spinner"></i> -->
+    <script src="script.js"></script>
   </body>
 </html>
