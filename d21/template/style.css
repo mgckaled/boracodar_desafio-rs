@@ -1,15 +1,9 @@
 /* ==== GLOBAL STYLES ==== */
 
 * {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
   padding: 0;
   margin: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
   scroll-behavior: smooth;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,10 +22,24 @@
   --close-button-color: #a1a1aa;
   --stroke-color: #3f3f46;
   --surface-color: #18181b;
+  --aside-color: #09090b;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--surface-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--stroke-color);
 }
 
 html {
   font-size: 62.5%;
+  background: var(--aside-color);
 }
 
 body {
@@ -39,6 +47,7 @@ body {
   display: grid;
   grid-template-areas: 'site-area car-products';
   grid-template-columns: 0.777fr 0.223fr;
+
   /* grid-template-rows: 100vh; */
   cursor: default;
 }
@@ -50,7 +59,7 @@ p {
 }
 
 b {
-  font-wheight: 700;
+  font-weight: 700;
 }
 
 i {
@@ -58,7 +67,7 @@ i {
 }
 
 button {
-  width: 32.4rem;
+  width: 36.4rem;
   height: 6.4rem;
   background-color: var(--brand-color);
   margin-top: 1.6rem;
@@ -101,7 +110,7 @@ button:hover {
 
 .site-area {
   grid-area: site-area;
-  background-color: #09090b;
+  background-color: var(--aside-color);
 }
 
 .car-products {
@@ -112,6 +121,10 @@ button:hover {
 /* ==== HEADER STYLES ==== */
 
 .header-cont {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  width: 42.8rem;
   padding: 2.4rem 2.4rem 2.4rem 3.2rem;
   border-bottom: 0.1rem solid var(--stroke-color);
 }
@@ -125,10 +138,15 @@ button:hover {
 /* ==== PRODUCTS STYLES ==== */
 
 .products-cont {
+  position: relative;
+  height: calc(100vh - 310px);
+  overflow: auto;
+  width: 42.8rem;
   margin-bottom: 1rem;
 }
 
 .item-cont {
+  width: 36.4rem;
   padding: 3.2rem 2.4rem;
   gap: 2.4rem;
 }
@@ -141,7 +159,7 @@ button:hover {
 
 .item-description {
   height: 4.8rem;
-  width: 21.44rem;
+  width: 23.6rem;
 }
 
 .item-description > p {
@@ -187,15 +205,17 @@ button:hover {
   height: 3.6rem;
 }
 
-.item-qtd-cont span > p  {
+.item-qtd-cont span > p {
   font-size: 1.4rem;
 }
 
 /* ==== CHECKOUT STYLES ==== */
 
 .checkout-cont {
-  width: inherit;
-  height: 16rem;
+  position: sticky;
+  top: 0;
+  width: initial;
+  height: 22.4rem;
   padding: 3.2rem;
   gap: 1.6rem;
   border-top: 0.1rem solid var(--stroke-color);
@@ -283,6 +303,7 @@ button:hover {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -290,7 +311,7 @@ button:hover {
 
 /*  ==== DIMENSIONS STYLES ==== */
 
-@media (max-width: 428px) {
+@media (width <= 428px) {
   body {
     grid-template-columns: 0fr 1fr;
     grid-template-areas: 'site-area car-products';
