@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
 
@@ -16,6 +16,149 @@
     <title>Carrinho de compras</title>
 
     <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
-  <body></body>
+  <body>
+    <section class="site-area"></section>
+    <section class="car-products flex-start col">
+      <header class="header-cont flex jc-sb ai-c row fixed">
+        <p>
+          Seu carrinho tem <b><span id="products-number">5</span> iten(s)</b>
+        </p>
+        <i class="ph-thin ph-x"></i>
+      </header>
+      <div class="products-cont flex col">
+        <div class="item-cont flex row">
+          <img src="../assets/images/product-image-monitor.jpg" alt="imagem do item do carrinho" />
+          <div class="data-item-cont flex col">
+            <div class="item-description flex-start">
+              <p>
+                Monitor Gamer Curvo 49 DQHD, 240Hz, 1ms, HDMI e DisplayPort, HDR 1000, FreeSync
+                Premium, Ajuste de Altura - LC49G95TSSLXZD
+              </p>
+            </div>
+            <div class="price-icons-cont flex row jc-sb ai-c">
+              <p><b>R$ 8.599,90</b></p>
+              <div class="flex row jc-sb">
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-minus"></i>
+                </div>
+                <div class="item-qtd-cont flex jc-c ai-c">
+                  <span id="iten-qtd"
+                    ><p><b>1</b></p></span
+                  >
+                </div>
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-cont flex row">
+          <img src="../assets/images/product-image-cadeira.jpg" alt="imagem do item do carrinho" />
+          <div class="data-item-cont flex col">
+            <div class="item-description flex-start">
+              <p>Cadeira Gamer  RGB - Preta com Iluminação (Led)</p>
+            </div>
+            <div class="price-icons-cont flex row jc-sb ai-c">
+              <p><b>R$ 959,90</b></p>
+              <div class="flex row jc-sb">
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-minus"></i>
+                </div>
+                <div class="item-qtd-cont flex jc-c ai-c">
+                  <span id="iten-qtd"
+                    ><p><b>1</b></p></span
+                  >
+                </div>
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-cont flex row">
+          <img src="../assets/images/product-image-teclado.jpg" alt="imagem do item do carrinho" />
+          <div class="data-item-cont flex col">
+            <div class="item-description flex-start">
+              <p>Teclado Gamer Mecânico Low Profile RGB AW510K 580</p>
+            </div>
+            <div class="price-icons-cont flex row jc-sb ai-c">
+              <p><b>R$ 1.002,00</b></p>
+              <div class="flex row jc-sb">
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-minus"></i>
+                </div>
+                <div class="item-qtd-cont flex jc-c ai-c">
+                  <span id="iten-qtd"
+                    ><p><b>1</b></p></span
+                  >
+                </div>
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-cont flex row">
+          <img src="../assets/images/product-image-headset.jpg" alt="imagem do item do carrinho" />
+          <div class="data-item-cont flex col">
+            <div class="item-description flex-start">
+              <p>Headset Gamer RGB Preto</p>
+            </div>
+            <div class="price-icons-cont flex row jc-sb ai-c">
+              <p><b>R$ 99,90</b></p>
+              <div class="flex row jc-sb">
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-minus"></i>
+                </div>
+                <div class="item-qtd-cont flex jc-c ai-c">
+                  <span id="iten-qtd"
+                    ><p><b>1</b></p></span
+                  >
+                </div>
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item-cont flex row">
+          <img src="../assets/images/product-image-patinho.jpg" alt="imagem do item do carrinho" />
+          <div class="data-item-cont flex col">
+            <div class="item-description flex-start">
+              <p>Patinho De Borracha Para Banho</p>
+            </div>
+            <div class="price-icons-cont flex row jc-sb ai-c">
+              <p><b>R$ 19,90</b></p>
+              <div class="flex row jc-sb">
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-minus"></i>
+                </div>
+                <div class="item-qtd-cont flex jc-c ai-c">
+                  <span id="iten-qtd"
+                    ><p><b>1</b></p></span
+                  >
+                </div>
+                <div class="icon-cont flex jc-c ai-c">
+                  <i class="ph-thin ph-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <i class="ph-thin ph-minus"></i> -->
+    <!-- <i class="ph-thin ph-plus"></i> -->
+    <!-- <i class="ph-thin ph-trash"></i> -->
+    <!-- <i class="ph-thin ph-tag"></i> -->
+    <!-- <i class="ph-thin ph-spinner"></i> -->
+  </body>
 </html>

@@ -1,4 +1,8 @@
+/* ==== GLOBAL STYLES ==== */
+
 * {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -13,26 +17,198 @@
 }
 
 :root {
-  font-size: 62.5%;
-
   /* Brand */
-  --brand-color: #9333EA;
-  --brand-color-light: #A855F7;
-  --brand-color-lither: #C084FC;
+  --brand-color: #9333ea;
+  --brand-color-light: #a855f7;
+  --brand-color-lither: #c084fc;
 
   /* Neutrals */
-  --text-color-primary: #F9FAFB;
-  --text-color-secundary: #E4E4E7;
-  --close-button-color: #A1A1AA;
-  --stroke-color: #3F3F46;
-  --surface-color: #18181B;
+  --text-color-primary: #f9fafb;
+  --text-color-secundary: #e4e4e7;
+  --close-button-color: #a1a1aa;
+  --stroke-color: #3f3f46;
+  --surface-color: #18181b;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  padding: 0;
-  margin: 0;
   font-family: Inter, sans-serif;
+  display: grid;
+  grid-template-areas: 'site-area car-products';
+  grid-template-columns: 0.777fr 0.223fr;
+  /* grid-template-rows: 100vh; */
   cursor: default;
 }
 
+b {
+  font-wheight: 700;
+}
 
+i {
+  cursor: pointer;
+}
+
+p {
+  color: var(--text-color-secundary);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-start {
+  display: flex-start;
+}
+
+.col {
+  flex-flow: column;
+}
+
+.row {
+  flex-flow: row;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.site-area {
+  grid-area: site-area;
+  background-color: #09090b;
+}
+
+.car-products {
+  grid-area: car-products;
+  background-color: var(--surface-color);
+}
+
+/* ==== HEADER STYLES ==== */
+
+.header-cont {
+  padding: 2.4rem 2.4rem 2.4rem 3.2rem;
+  border-bottom: 0.1rem solid var(--stroke-color);
+}
+
+.header-cont > p {
+  color: var(--text-color-secundary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+
+
+/* ==== PRODUCTS STYLES ==== */
+
+.products-cont {
+  margin-bottom: 1rem;
+}
+
+.item-cont {
+  padding: 3.2rem 2.4rem;
+  gap: 2.4rem;
+}
+
+.item-cont > img {
+  width: 10.4rem;
+  height: 10.4rem;
+  border-radius: 0.8rem;
+}
+
+.item-description {
+  height: 4.8rem;
+  width: 21.44rem;
+}
+
+.item-description > p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.data-item-cont {
+  height: 10.4rem;
+  gap: 1.52rem;
+}
+
+.price-icons-cont > p {
+  font-size: 1.6rem;
+}
+
+.icon-cont {
+  width: 3.6rem;
+  height: 3.6rem;
+  background-color: transparent;
+  border: 0.1rem solid var(--stroke-color);
+  border-radius: 0.8rem;
+}
+
+.item-qtd-cont {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+
+.item-qtd-cont > p {
+  font-size: 1.6rem;
+}
+
+/* ==== ICON STYLES ==== */
+
+.ph-x {
+  font-size: 2.4rem;
+  color: var(--text-color-primary);
+  transform: trasform 1000ms ease-in, color 300ms ease-in-out;
+}
+
+.ph-x:hover {
+  color: var(--text-color-secundary);
+}
+
+.ph-x:active {
+  transform: scale(1.2);
+}
+
+.ph-minus,
+.ph-plus {
+  font-size: 1.6rem;
+  color: var(--brand-color-light);
+}
+
+.ph-spinner {
+  animation: spin 1.5s linear infinite;
+  font-size: 2.4rem;
+  color: var(--text-color-primary);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*  ==== DIMENSIONS STYLES ==== */
+
+@media (max-width: 428px) {
+  body {
+    grid-template-columns: 0fr 1fr;
+    grid-template-areas: 'site-area car-products';
+  }
+}
