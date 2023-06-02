@@ -165,6 +165,12 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td align="center" ><a href="17"><img width="200px" src="d21/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d21/template/" target="_blank" ><img width="40px" src="d21/.github/assets/deploy.svg" /></a></td>
         </tr>
+        <tr>
+            <td><code>22</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d22" target="_blank" ><code>componente de profile settings</code></a></td>
+            <td align="center" ><a href="17"><img width="200px" src="d22/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d22/template/" target="_blank" ><img width="40px" src="d22/.github/assets/deploy.svg" /></a></td>
+        </tr>
     </tbody>
   </table>
 </p>

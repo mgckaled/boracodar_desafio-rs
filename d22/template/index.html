@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="shortcut icon" type="image/svg" href="../assets/favicon/fav-icon.svg" />
+    <title>Componente de Profile Settings</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <section class="container flex col">
+      <div class="profile flex">
+        <div class="avatar-wrapper">
+          <img loading="lazy" src="../assets/images/avatar.png" alt="avatar profile image" />
+        </div>
+        <div class="user-email-wrapper">
+          <h1>Marcel Kaled</h1>
+          <p>mgck.dev@proton.me</p>
+        </div>
+      </div>
+      <div class="settings flex col">
+        <p>conta</p>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-user-circle"></i>
+          <p>Dados Pessoais</p>
+          <i class="ph ph-caret-right"></i>
+        </div>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-key"></i>
+          <p>Informações de login</p>
+          <i class="ph ph-caret-right"></i>
+        </div>
+      </div>
+      <div class="settings flex col">
+        <p>preferências</p>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-bell"></i>
+          <p>Notificações</p>
+          <i class="ph ph-caret-right"></i>
+        </div>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-person-arms-spread"></i>
+          <p>Acessibilidade</p>
+          <i class="ph ph-caret-right"></i>
+        </div>
+      </div>
+      <div class="settings flex col">
+        <p>privacidade</p>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-devices"></i>
+          <p>Aparelhos conectados</p>
+          <i class="ph ph-caret-right"></i>
+        </div>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-key"></i>
+          <p>Contas vinculadas</p>
+          <i class="ph ph-caret-right"></i>
+        </div>
+      </div>
+      <div class="settings flex col">
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-question"></i>
+          <p>Central de Ajuda</p>
+        </div>
+        <div class="icon-setting-wrapper flex">
+          <i class="ph ph-sign-out"></i>
+          <p>Sair</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

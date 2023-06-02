@@ -1,0 +1,138 @@
+/* ==== GLOBAL STYLES ==== */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+
+  /* Pallet Colors */
+  --gradient-1: #935fd3;
+  --gradient-2: #9245f1;
+  --red: #a22;
+
+  /* Neutrals Colors*/
+  --grey-100: #fdfcfe;
+  --grey-200: #f4effa;
+  --grey-300: #797085;
+  --grey-400: #686071;
+  --grey-500: #38343d;
+}
+
+html {
+  font-family: Heebo, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(107.54deg, var(--gradient-1), 0%, var(--gradient-2) 100%);
+  color: var(--grey-500);
+  cursor: default;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+  line-height: 2rem;
+  font-weight: 400;
+}
+
+i {
+  font-size: 2rem;
+  color: var(--grey-500);
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+}
+
+.col {
+  flex-flow: column;
+}
+
+/* ==== CONTAINER STYLES ==== */
+
+.container {
+  width: 37.5rem;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  background-color: var(--grey-100);
+}
+
+.container .profile {
+  gap: 1.6rem;
+  padding-bottom: 2.4rem;
+}
+
+.container .profile .user-email-wrapper {
+  gap: 0.8rem;
+}
+
+.container .profile .user-email-wrapper > p {
+  font-size: 1.4rem;
+  color: var(--grey-400);
+}
+
+.container .settings {
+  padding: 1.6rem 0;
+  border-top: 2px solid var(--grey-200);
+}
+
+.container .settings > p {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--grey-300);
+  padding: 0 0 1.2rem;
+}
+
+.container .settings:last-child {
+  padding: 1.2rem 0 0;
+}
+
+.container .settings .icon-setting-wrapper {
+  justify-content: space-between;
+  padding: 0.8rem 0;
+  cursor: pointer;
+}
+
+.container .settings .icon-setting-wrapper p {
+  margin-left: 0.8rem;
+  margin-right: auto;
+}
+
+.container .settings .icon-setting-wrapper > i:last-child {
+  color: var(--grey-300);
+  font-size: 1.6rem;
+}
+
+.container .settings:last-of-type .icon-setting-wrapper:last-child i,
+.container .settings:last-of-type .icon-setting-wrapper:last-child p {
+  color: var(--red);
+}
+
+/* ==== RESPOSIVE STYLES ==== */
+
+@media (width < 376px) {
+  body {
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: var(--grey-100);
+  }
+}
