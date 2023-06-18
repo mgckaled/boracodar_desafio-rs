@@ -36,7 +36,8 @@
     "d19",
     "d20",
     "d21",
-    "d22"
+    "d22",
+    "d23"
   ],
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.57.1",

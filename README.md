@@ -144,32 +144,38 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
         <tr>
             <td><code>18</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d18" target="_blank" ><code>card de personagem</code></a></td>
-            <td align="center" ><a href="17"><img width="200px" src="d18/.github/assets/preview.jpg" /></a></td>
+            <td align="center" ><a href="18"><img width="200px" src="d18/.github/assets/preview.jpg" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d18/template/" target="_blank" ><img width="40px" src="d18/.github/assets/deploy.svg" /></a></td>
         </tr>
         <tr>
             <td><code>19</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d19" target="_blank" ><code>widget de transporte</code></a></td>
-            <td align="center" ><a href="17"><img width="200px" src="d19/.github/assets/preview.jpg" /></a></td>
+            <td align="center" ><a href="19"><img width="200px" src="d19/.github/assets/preview.jpg" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d19/template/" target="_blank" ><img width="40px" src="d19/.github/assets/deploy.svg" /></a></td>
         </tr>
         <tr>
             <td><code>20</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d20" target="_blank" ><code>galeria de imagens</code></a></td>
-            <td align="center" ><a href="17"><img width="200px" src="d20/.github/assets/preview.png" /></a></td>
+            <td align="center" ><a href="20"><img width="200px" src="d20/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d20/template/" target="_blank" ><img width="40px" src="d20/.github/assets/deploy.svg" /></a></td>
         </tr>
         <tr>
             <td><code>21</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d21" target="_blank" ><code>carrinho de compras</code></a></td>
-            <td align="center" ><a href="17"><img width="200px" src="d21/.github/assets/preview.png" /></a></td>
+            <td align="center" ><a href="21"><img width="200px" src="d21/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d21/template/" target="_blank" ><img width="40px" src="d21/.github/assets/deploy.svg" /></a></td>
         </tr>
         <tr>
             <td><code>22</code></td>
             <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d22" target="_blank" ><code>componente de profile settings</code></a></td>
-            <td align="center" ><a href="17"><img width="200px" src="d22/.github/assets/preview.png" /></a></td>
+            <td align="center" ><a href="22"><img width="200px" src="d22/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d22/template/" target="_blank" ><img width="40px" src="d22/.github/assets/deploy.svg" /></a></td>
+        </tr>
+        <tr>
+            <td><code>23</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d23" target="_blank" ><code>formulário multistep</code></a></td>
+            <td align="center" ><a href="23"><img width="200px" src="d23/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d23/template/" target="_blank" ><img width="40px" src="d23/.github/assets/deploy.svg" /></a></td>
         </tr>
     </tbody>
   </table>
