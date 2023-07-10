@@ -1,8 +1,8 @@
 <!-- markdownlint-disable MD033 -->
 
-# `Desafio #23 - Formulário Multistep`
+# `Desafio #24 - Ajustes de Iluminação`
 
-**Desafio da Semana**: Desenvolva um formulário dividido em etapas. Use sua criatividade e fique à vontade para ir além nesse projeto.
+**Desafio da Semana**: Desenvolva um aplicativo de ajustes de iluminação. Use sua criatividade e fique à vontade para ir além nesse projeto.
 
 > `#boraCodar` são desafios semanais promovido pela Rocketseat para ensino de tecnologias WEB.
 
@@ -37,7 +37,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1248257890741817885). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1250810959627241982). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
 
 ## 📝 Licença
 

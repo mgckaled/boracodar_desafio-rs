@@ -177,6 +177,12 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td align="center" ><a href="23"><img width="200px" src="d23/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d23/template/" target="_blank" ><img width="40px" src="d23/.github/assets/deploy.svg" /></a></td>
         </tr>
+        <tr>
+            <td><code>24</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d24" target="_blank" ><code>formulário multistep</code></a></td>
+            <td align="center" ><a href="24"><img width="200px" src="d24/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d24/template/" target="_blank" ><img width="40px" src="d24/.github/assets/deploy.svg" /></a></td>
+        </tr>
     </tbody>
   </table>
 </p>
