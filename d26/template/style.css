@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+.flex {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #feece0;
+  font-family: source-serif-pro, serif;
+}
+
+h1 {
+  font-size: 7.2rem;
+  color: #58190a;
+}
+
+h2,
+i {
+  font-size: 3.8rem;
+}
+
+.top {
+  justify-content: center;
+  margin: 11.2rem 18rem 5.6rem;
+  gap: 5.6rem;
+}
+
+picture img {
+  width: 38rem;
+  height: 28.5rem;
+}
+
+.top p {
+  font-size: 3.8rem;
+  color: #58190a;
+}
+
+.info p {
+  padding: 0.8rem 0;
+}
+
+.buttons {
+  gap: 2rem;
+}
+
+.buttons,
+span,
+.buttons p {
+  color: #9b6647;
+  font-size: 3.5rem;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.buttons i {
+  font-size: 3.2rem;
+  color: #9b6647;
+}
+
+.bottom {
+  height: 100vh;
+  justify-content: center;
+  gap: 6.4rem;
+  padding: 6.4rem 5rem;
+  background-color: #9b6647;
+  color: #feece0;
+}
+
+ul,
+ol {
+  padding-left: 4.1rem;
+}
+
+li {
+  font-size: 2.8rem;
+  font-family: source-sans-pro, serif;
+}
+
+.col1 > div,
+.col2 > div {
+  margin-bottom: 3.5rem;
+  gap: 1.8rem;
+}
