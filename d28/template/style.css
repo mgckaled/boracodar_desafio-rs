@@ -10,7 +10,6 @@
 
 :root {
   font-size: 62.5%;
-  
 
   --gray-100: #f8fafc;
   --grey-200: #e2e8f0;
@@ -47,19 +46,19 @@ main {
   background: var(--grey-500);
   width: 121.6rem;
   flex-direction: column;
-  padding: 5.4rem;
-  gap: 3.6rem;
+  padding: 4rem 5rem;
+  gap: 3rem;
   border-radius: 3.2rem;
   border: 1px solid var(--grey-400);
 }
 
 header {
   flex-direction: column;
-  gap: 2.2rem;
+  gap: 2rem;
 }
 
 i {
-  font-size: 3.6rem;
+  font-size: 3.2rem;
   color: var(--grey-300);
   cursor: pointer;
   transition: color 200ms ease-in-out;
@@ -70,7 +69,7 @@ i:hover {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3rem;
   line-height: 130%;
   font-weight: 700;
   color: var(--gray-100);
@@ -91,7 +90,8 @@ hr {
   height: 0.3rem;
 }
 
-input, input::placeholder {
+input,
+input::placeholder {
   font-family: 'IBM Plex Sans', sans-serif;
   border: none;
   background-color: transparent;
@@ -107,9 +107,9 @@ input, input::placeholder {
   justify-content: center;
   align-items: center;
   display: flex;
-  width: 6.2rem;
-  height: 6.2rem;
-  padding: 1.6rem;
+  width: 6rem;
+  height: 6rem;
+  padding: 1.4rem;
   border-radius: 1.6rem;
   border: 1px solid var(--grey-400);
   background: var(--grey-600);
@@ -149,7 +149,7 @@ input, input::placeholder {
 
 .input-wrapper {
   flex: 1 0 0;
-  padding: 1.2rem;
+  padding: 1.4rem;
   border-radius: 1.6rem;
   border: 1px solid var(--grey-400);
   background: var(--grey-600);
