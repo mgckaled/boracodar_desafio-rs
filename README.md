@@ -179,9 +179,33 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
         </tr>
         <tr>
             <td><code>24</code></td>
-            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d24" target="_blank" ><code>formulário multistep</code></a></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d24" target="_blank" ><code>ajustes de iluminação</code></a></td>
             <td align="center" ><a href="24"><img width="200px" src="d24/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d24/template/" target="_blank" ><img width="40px" src="d24/.github/assets/deploy.svg" /></a></td>
+        </tr>
+        <tr>
+            <td><code>25</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d25" target="_blank" ><code>player de vr</code></a></td>
+            <td align="center" ><a href="25"><img width="200px" src="d25/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d25/template/" target="_blank" ><img width="40px" src="d25/.github/assets/deploy.svg" /></a></td>
+        </tr>
+        <tr>
+            <td><code>26</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d26" target="_blank" ><code>receita junina</code></a></td>
+            <td align="center" ><a href="26"><img width="200px" src="d26/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d26/template/" target="_blank" ><img width="40px" src="d26/.github/assets/deploy.svg" /></a></td>
+        </tr>
+        <tr>
+            <td><code>27</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d27" target="_blank" ><code>página de erro 404</code></a></td>
+            <td align="center" ><a href="27"><img width="200px" src="d27/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d27/template/" target="_blank" ><img width="40px" src="d27/.github/assets/deploy.svg" /></a></td>
+        </tr>
+        <tr>
+            <td><code>28</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d28" target="_blank" ><code>plataforma de IA</code></a></td>
+            <td align="center" ><a href="28"><img width="200px" src="d28/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d28/template/" target="_blank" ><img width="40px" src="d28/.github/assets/deploy.svg" /></a></td>
         </tr>
     </tbody>
   </table>

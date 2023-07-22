@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  
+
+  --gray-100: #f8fafc;
+  --grey-200: #e2e8f0;
+  --grey-300: #94a3b8;
+  --grey-400: #334155;
+  --grey-500: #1e293b;
+  --grey-600: #0f172a;
+  --grey-700: #020617;
+}
+
+.flex {
+  display: flex;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.jc-c {
+  justify-content: center;
+}
+
+html {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body {
+  background: url('../assets/images/background.png') center / cover;
+  height: 100vh;
+  cursor: default;
+}
+
+main {
+  background: var(--grey-500);
+  width: 121.6rem;
+  flex-direction: column;
+  padding: 5.4rem;
+  gap: 3.6rem;
+  border-radius: 3.2rem;
+  border: 1px solid var(--grey-400);
+}
+
+header {
+  flex-direction: column;
+  gap: 2.2rem;
+}
+
+i {
+  font-size: 3.6rem;
+  color: var(--grey-300);
+  cursor: pointer;
+  transition: color 200ms ease-in-out;
+}
+
+i:hover {
+  color: var(--grey-200);
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 130%;
+  font-weight: 700;
+  color: var(--gray-100);
+}
+
+p {
+  font-size: 1.8rem;
+  line-height: 150%;
+  font-weight: 600;
+  color: var(--grey-200);
+}
+
+hr {
+  display: block;
+  width: 100%;
+  background: var(--grey-400);
+  border-color: var(--grey-400);
+  height: 0.3rem;
+}
+
+input, input::placeholder {
+  font-family: 'IBM Plex Sans', sans-serif;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  font-size: 1.8rem;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--grey-200);
+  outline: none;
+}
+
+.icon-cont {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 6.2rem;
+  height: 6.2rem;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  border: 1px solid var(--grey-400);
+  background: var(--grey-600);
+}
+
+.ia-tools {
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.tool {
+  width: 60.8rem;
+  flex-direction: row;
+  padding: 1.6rem;
+  border-radius: 1.6rem;
+  border: 1px solid var(--grey-400);
+  background: var(--grey-600);
+}
+
+.tool .icon-cont {
+  margin-right: 3.6rem;
+}
+
+.tool > i {
+  font-size: 3.2rem;
+  padding-inline: 1.6rem;
+}
+
+.tool > p {
+  margin-right: auto;
+}
+
+.prompt {
+  gap: 1.6rem;
+  width: 100%;
+}
+
+.input-wrapper {
+  flex: 1 0 0;
+  padding: 1.2rem;
+  border-radius: 1.6rem;
+  border: 1px solid var(--grey-400);
+  background: var(--grey-600);
+}
+
+.input-wrapper > i {
+  margin-right: 1.6rem;
+}
