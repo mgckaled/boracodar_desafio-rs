@@ -207,6 +207,12 @@ Para conhecer ou consultar a resolução dos desafios, acesse <https://boracodar
             <td align="center" ><a href="28"><img width="200px" src="d28/.github/assets/preview.png" /></a></td>
             <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d28/template/" target="_blank" ><img width="40px" src="d28/.github/assets/deploy.svg" /></a></td>
         </tr>
+         <tr>
+            <td><code>29</code></td>
+            <td><a href="https://github.com/mgckaled/boracodar_desafios-rs/tree/main/d29" target="_blank" ><code>image AI upscaler</code></a></td>
+            <td align="center" ><a href="29"><img width="200px" src="d29/.github/assets/preview.png" /></a></td>
+            <td><a href="https://mgckaled.github.io/boracodar_desafios-rs/d29/template/" target="_blank" ><img width="40px" src="d29/.github/assets/deploy.svg" /></a></td>
+        </tr>
     </tbody>
   </table>
 </p>
