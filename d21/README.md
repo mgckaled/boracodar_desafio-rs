@@ -32,6 +32,7 @@ Aprecie o resultado do desafio [`AQUI`](https://mgckaled.github.io/boracodar_des
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - HTML CSS e JS
+- [PhosphorIcons](https://phosphoricons.com/)
 - Git e Github
 - Figma
 

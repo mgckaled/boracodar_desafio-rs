@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,17 +17,9 @@
   <body>
     <main>
       <div id="app-container">
-        <div
-          id="upload-box"
-          click="selectFile"
-          ondragover="handleDragOver(event)"
-          ondrop="handleFileSelect(event)"
-        >
+        <div id="upload-box" click="selectFile" ondragover="handleDragOver(event)" ondrop="handleFileSelect(event)">
           <input type="file" id="file-input" click="selectFile()" style="display: none" />
-          <img
-            src="../assets/cloud.svg"
-            alt="Ícone representano uma núvem roxa com uma seta para cima,no meio"
-          />
+          <img src="../assets/cloud.svg" alt="Ícone representano uma núvem roxa com uma seta para cima,no meio" />
 
           <p class="p-header-upload-box"><strong>Importe seus arquivos </strong></p>
           <p class="p-upload-box">Arraste ou clique para fazer upload</p>

@@ -3,7 +3,7 @@ function updateTotalPrice() {
   const itemElements = document.querySelectorAll('.item-cont')
   let totalPrice = 0
 
-  itemElements.forEach(itemElement => {
+  itemElements.forEach((itemElement) => {
     const quantityElement = itemElement.querySelector('.item-qtd-cont #item-quantity')
     const priceElement = itemElement.querySelector('.price-icons-cont #price')
 
@@ -18,7 +18,7 @@ function updateTotalPrice() {
   const totalElement = document.getElementById('total-price')
   totalElement.innerHTML = `<b>${totalPrice.toLocaleString('pt-BR', {
     style: 'currency',
-    currency: 'BRL'
+    currency: 'BRL',
   })}</b>`
 }
 
@@ -26,7 +26,7 @@ function updateTotalPrice() {
 const plusButtons = document.querySelectorAll('.icon-cont .ph-plus')
 const minusButtons = document.querySelectorAll('.icon-cont .ph-minus')
 
-plusButtons.forEach(button => {
+plusButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const quantityElement = button.parentNode.parentNode.querySelector('#item-quantity')
     const quantity = parseInt(quantityElement.textContent.trim())
@@ -36,7 +36,7 @@ plusButtons.forEach(button => {
   })
 })
 
-minusButtons.forEach(button => {
+minusButtons.forEach((button) => {
   button.addEventListener('click', () => {
     const quantityElement = button.parentNode.parentNode.querySelector('#item-quantity')
     const quantity = parseInt(quantityElement.textContent.trim())

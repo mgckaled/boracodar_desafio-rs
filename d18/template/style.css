@@ -31,10 +31,9 @@ body {
 
 .main-cont {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 10rem 5rem;
-  gap: 5rem;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 40px;
 }
 
 h1 {
@@ -69,27 +68,42 @@ p {
 }
 
 .card {
-  position: relative;
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 43.6rem;
-  height: 60.8rem;
+  top: 0;
+  opacity: 0;
   padding: 4rem 3.8rem;
   border-radius: 2rem;
-  box-shadow: 0 294px 118px rgb(0 0 0 / 3%), 0 165px 99px rgb(0 0 0 / 10%);
+  box-shadow:
+    0 294px 118px rgb(0 0 0 / 3%),
+    0 165px 99px rgb(0 0 0 / 10%);
+  flex: 0 0 80%;
+  margin: 0 20px;
+  position: relative;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+  scroll-snap-align: center;
+}
+
+.card.selected {
+  transform: scale(1);
+  z-index: 1;
 }
 
 .bg-1 {
   background-image: var(--card-1-bg);
+  z-index: 3;
 }
 
 .bg-2 {
   background-image: var(--card-2-bg);
+  z-index: 2;
 }
 
 .bg-3 {
   background-image: var(--card-3-bg);
+  z-index: 1;
 }
 
 .img-persona {
@@ -100,11 +114,32 @@ p {
   top: 20%;
   left: 50%;
 }
+
 .img-02 {
   top: 10%;
   left: 25%;
 }
+
 .img-03 {
   top: 50%;
   left: 25%;
+}
+
+.controls {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.controls button {
+  border: none;
+  background: transparent;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.controls .prev {
+  margin-right: 10px;
 }

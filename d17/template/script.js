@@ -24,7 +24,7 @@ const months = [
   'Setembro',
   'Outubro',
   'Novenbro',
-  'Dezembro'
+  'Dezembro',
 ]
 
 // array to store selected dates
@@ -52,9 +52,7 @@ const renderCalendar = () => {
       (date) => date.year === currYear && date.month === currMonth && date.day === i
     )
     const isToday =
-      i === date.getDate() &&
-      currMonth === new Date().getMonth() &&
-      currYear === new Date().getFullYear()
+      i === date.getDate() && currMonth === new Date().getMonth() && currYear === new Date().getFullYear()
         ? 'active'
         : ''
     liTag += `<li class="${isToday} ${isSelected ? 'selected' : ''}">${i}</li>`
@@ -89,7 +87,7 @@ const renderCalendar = () => {
         selectedDates.push({
           year: currYear,
           month: currMonth,
-          day
+          day,
         })
         dateEl.classList.add('selected')
       }

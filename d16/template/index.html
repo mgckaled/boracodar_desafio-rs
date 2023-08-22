@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +13,12 @@
     <link rel="shortcut icon" type="image/svg" href="../assets/favicon/fav-icon.svg" />
     <title>Página de Contato</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/global.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/modal.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/animation.css" /> -->
   </head>
   <body>
     <div id="app">
@@ -26,7 +28,7 @@
           <div class="header">
             <h2>Meus Contatos</h2>
             <div class="icons-cont">
-              <button class="btn-icon add">
+              <button class="btn-icon add" id="open-modal">
                 <img src="../assets/icons/add.svg" alt="" />
               </button>
               <button class="btn-icon edit">
@@ -416,7 +418,7 @@
               <div class="letter-cont">
                 <h3 class="alphabet">S</h3>
               </div>
-               <div class="contacts-list">
+              <div class="contacts-list">
                 <div class="info">
                   <div class="avatar-cont">
                     <img
@@ -518,8 +520,25 @@
         </div>
         <!-- end MAIN -->
       </main>
+      <!-- end MAIN -->
+
+      <div id="modal" class="modal">
+        <div class="modal-cont">
+          <span class="close">&times;</span>
+          <h2>Cadastrar Novo Contato</h2>
+          <form id="form-cont">
+            <input type="text" id="i-name" name="name" placeholder="Digite o nome..." required />
+            <input type="number" id="i-number" name="number" placeholder="Digite o número..." required />
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
     </div>
+    <!-- start MODAL-->
+
+    <!-- end MODAL-->
   </body>
   <script src="./utils/select-random-letter-colors.js"></script>
   <script src="./utils/contact-filter.js"></script>
+  <script src="./utils/modal.js"></script>
 </html>

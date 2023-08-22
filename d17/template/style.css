@@ -55,7 +55,11 @@ header {
 #expand.material-symbols-outlined,
 #prev-year.material-symbols-outlined,
 #next-year.material-symbols-outlined {
-  font-variation-settings: 'FILL', 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-variation-settings:
+    'FILL',
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
   color: var(--color-font-text);
 }
 

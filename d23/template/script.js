@@ -16,7 +16,7 @@ form.addEventListener('click', (e) => {
     },
     prev() {
       currentStep--
-    }
+    },
   }
   const action = e.target.dataset.action
   actions[action]()
@@ -55,10 +55,7 @@ function updateProgressStep() {
 // validation
 function isValidInputs() {
   const currentFormStep = formSteps[currentStep]
-  const formFields = [
-    ...currentFormStep.querySelectorAll('input'),
-    ...currentFormStep.querySelectorAll('textarea')
-  ]
+  const formFields = [...currentFormStep.querySelectorAll('input'), ...currentFormStep.querySelectorAll('textarea')]
 
   return formFields.every((input) => input.reportValidity())
 }

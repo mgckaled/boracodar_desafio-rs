@@ -24,7 +24,7 @@ const colors = [
   '#967E76',
   '#395B64',
   '#3F4E4F',
-  '#F15412'
+  '#F15412',
 ]
 
 // atribuir o container da letra a variável

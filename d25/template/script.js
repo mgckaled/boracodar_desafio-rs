@@ -17,8 +17,8 @@ function createAmbientLight() {
     videoId,
     events: {
       onReady: ambientLightReady,
-      onStateChange: ambientStateChange
-    }
+      onStateChange: ambientStateChange,
+    },
   })
 }
 
@@ -26,8 +26,8 @@ window.onYouTubeIframeAPIReady = function () {
   video = new YT.Player('video', {
     videoId,
     events: {
-      onStateChange: videoStateChange
-    }
+      onStateChange: videoStateChange,
+    },
   })
 }
 

@@ -26,8 +26,13 @@
   font-size: 62.5%;
 }
 
-body {
+html,
+body,
+input {
   font-family: Roboto, sans-serif;
+}
+
+body {
   background-color: var(--background);
 }
 
@@ -212,7 +217,9 @@ input#search-input::placeholder {
   border: 0.2rem ridge transparent;
   border-radius: 0.8rem;
   gap: 1.6rem;
-  transition: background-color 0.5s ease-in, border 0.4s ease;
+  transition:
+    background-color 0.5s ease-in,
+    border 0.4s ease;
   cursor: pointer;
   overflow: hidden;
 }
@@ -228,7 +235,8 @@ input#search-input::placeholder {
 .contacts-cont .grid .contacts-group .contacts-list .info .avatar-cont {
   width: 4.8rem;
   height: 4.8rem;
-  border-radius: 99rem;
+  object-fit: cover;
+  border-radius: 50%;
   overflow: hidden;
 }
 
@@ -261,6 +269,60 @@ input#search-input::placeholder {
 
 .grid::-webkit-scrollbar-track {
   background-color: var(--blue-300);
+}
+
+/*  ==== MODAL STYLES ==== */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0 0 0 / 40%);
+}
+
+.modal-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-200);
+  border: 0.1rem solid var(--gray-200);
+  text-align: left;
+}
+
+.form-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (width < 600px) {
+  .modal-content {
+    max-width: 100%;
+  }
 }
 
 /*  ==== ANIMATIONS STYLES ==== */

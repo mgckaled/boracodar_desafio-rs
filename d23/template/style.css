@@ -121,7 +121,9 @@ ion-icon {
 .primary {
   background-color: var(--color-produto-purple-mid);
   color: var(--color-base-white);
-  transition: color 180ms ease-in-out, opacity 180ms ease-in-out;
+  transition:
+    color 180ms ease-in-out,
+    opacity 180ms ease-in-out;
 }
 
 .primary:hover {

@@ -107,7 +107,9 @@ input[type='file'] {
   background-color: var(--purple-100);
   border-radius: 0.8rem;
   border: 0.25rem dashed var(--purple-200);
-  transition: border-color 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  transition:
+    border-color 0.5s ease-in-out,
+    background-color 0.5s ease-in-out;
 }
 
 #file-box {

@@ -1,12 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet" />
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +12,6 @@
 
     <link rel="shortcut icon" type="image/png" href="../assets/favicon/_favicon.svg" />
     <link rel="stylesheet" href="style.css" />
-
   </head>
   <body>
     <div id="calculator">
@@ -25,43 +21,43 @@
         </div>
         <div id="result">
           <img src="../assets/equals.svg" alt="Equal sign" />
-            <div id="result-container">
-              <input type="text" id="result-display" disabled />
-            </div>         
+          <div id="result-container">
+            <input type="text" id="result-display" disabled />
+          </div>
         </div>
       </div>
       <div id="keyboard">
-        <button class="secondary" onclick="clearEntry()" >CE</button>
+        <button class="secondary" onclick="clearEntry()">CE</button>
         <button onclick="clearAll()">C</button>
         <button onclick="calculatePercentage()">
           <img id="percent" src="../assets/percent.svg" alt="Percent" />
-        </button >
-        <button class="tertiary" onclick="appendInput('/')" >
+        </button>
+        <button class="tertiary" onclick="appendInput('/')">
           <img src="../assets/divide.svg" alt="Divide" />
         </button>
         <button onclick="appendInput('7')">7</button>
         <button onclick="appendInput('8')">8</button>
         <button onclick="appendInput('9')">9</button>
-        <button class="tertiary" onclick="appendInput('*')" >
-          <img  src="../assets/x.svg" alt="Multiplication" />
+        <button class="tertiary" onclick="appendInput('*')">
+          <img src="../assets/x.svg" alt="Multiplication" />
         </button>
         <button onclick="appendInput('4')">4</button>
         <button onclick="appendInput('5')">5</button>
         <button onclick="appendInput('6')">6</button>
-        <button class="tertiary" onclick="appendInput('-')" >
+        <button class="tertiary" onclick="appendInput('-')">
           <img src="../assets/minus.svg" alt="Minus" />
         </button>
         <button onclick="appendInput('1')">1</button>
         <button onclick="appendInput('2')">2</button>
         <button onclick="appendInput('3')">3</button>
-        <button class="tertiary" onclick="appendInput('+')" >
+        <button class="tertiary" onclick="appendInput('+')">
           <img src="../assets/plus.svg" alt="Plus" />
         </button>
-        <button onclick="toggleSign()" >
+        <button onclick="toggleSign()">
           <img src="../assets/plusminus.svg" alt="PlusMinus" />
         </button>
-        <button onclick="appendInput('0')" >0</button>
-        <button onclick="appendInput('.')"" >.</button>
+        <button onclick="appendInput('0')">0</button>
+        <button onclick="appendInput('.')">.</button>
         <button class="quartiary" onclick="calculateResult()">
           <img src="../assets/result.svg" alt="Equals" />
         </button>

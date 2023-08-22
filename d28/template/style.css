@@ -36,12 +36,6 @@ html {
   font-family: 'IBM Plex Sans', sans-serif;
 }
 
-body {
-  background: url('../assets/images/background.png') center / cover;
-  height: 100vh;
-  cursor: default;
-}
-
 main {
   background: var(--grey-500);
   width: 121.6rem;
