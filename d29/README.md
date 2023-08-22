@@ -13,10 +13,6 @@
   <a href="#memo-licença">Licença</a>
 </p>
 
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&mes=MIT&color=49AA26&labelColor=000000">
-</p>
-
 <br>
 
 <p align="center">
@@ -41,7 +37,7 @@ Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figm
 
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT.
+Esse projeto está sob a licença MIT. <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 
 ---
 
