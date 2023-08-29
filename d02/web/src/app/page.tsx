@@ -2,10 +2,10 @@
 import Image from 'next/image'
 import { useState } from 'react'
 
-import animatedIcon from '../assets/360.svg'
-import staticIcon from '../assets/close.svg'
-import sofaGIF from '../assets/sofa.gif'
-import sofaImg from '../assets/sofa.jpg'
+import animatedIcon from '../../public/360.svg'
+import staticIcon from '../../public/close.svg'
+import sofaGIF from '../../public/sofa.gif'
+import sofaImg from '../../public/sofa.jpg'
 
 export default function Home() {
   const [isAnimationActive, setAnimationActive] = useState(false)
@@ -43,4 +43,7 @@ export default function Home() {
     </main>
   )
 }
+
+
+
 
